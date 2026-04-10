@@ -1,0 +1,81 @@
+{
+  "overall_ok": true,
+  "gate_name": "compiled_backend_gate",
+  "schema_exists": true,
+  "profile_rows": [
+    {
+      "profile": "examples/canonical/invoice_profile.json",
+      "deterministic": true,
+      "idempotent_bytes": true,
+      "request_rows": [
+        {
+          "request_kind": "allow",
+          "compiled_verdict": "ALLOW",
+          "anf_verdict": "ALLOW",
+          "reference_verdict": "ALLOW",
+          "parity_ok": true
+        },
+        {
+          "request_kind": "deny",
+          "compiled_verdict": "REFUSAL",
+          "anf_verdict": "REFUSAL",
+          "reference_verdict": "REFUSAL",
+          "parity_ok": true
+        }
+      ],
+      "overall_ok": true
+    },
+    {
+      "profile": "examples/canonical/invoice_profile_stricter.json",
+      "deterministic": true,
+      "idempotent_bytes": true,
+      "request_rows": [
+        {
+          "request_kind": "allow",
+          "compiled_verdict": "ALLOW",
+          "anf_verdict": "ALLOW",
+          "reference_verdict": "ALLOW",
+          "parity_ok": true
+        },
+        {
+          "request_kind": "deny",
+          "compiled_verdict": "REFUSAL",
+          "anf_verdict": "REFUSAL",
+          "reference_verdict": "REFUSAL",
+          "parity_ok": true
+        }
+      ],
+      "overall_ok": true
+    },
+    {
+      "profile": "examples/canonical/invoice_profile_weaker.json",
+      "deterministic": true,
+      "idempotent_bytes": true,
+      "request_rows": [
+        {
+          "request_kind": "allow",
+          "compiled_verdict": "ALLOW",
+          "anf_verdict": "ALLOW",
+          "reference_verdict": "ALLOW",
+          "parity_ok": true
+        },
+        {
+          "request_kind": "deny",
+          "compiled_verdict": "REFUSAL",
+          "anf_verdict": "REFUSAL",
+          "reference_verdict": "REFUSAL",
+          "parity_ok": true
+        }
+      ],
+      "overall_ok": true
+    }
+  ],
+  "bundle_details": {
+    "overall_ok": true,
+    "compiler_emits_compiled_backend": true,
+    "compiler_emits_compiled_backend_schema": true,
+    "verification_compiled_backend_check": true,
+    "verification_compiled_backend_schema_check": true
+  },
+  "issues": []
+}

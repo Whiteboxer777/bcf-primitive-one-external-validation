@@ -1,0 +1,32 @@
+{
+  "contract_name": "cross_repo_parity_contract_v1",
+  "required_main_reports": [
+    "REPORTS/node_out_of_family_parity_report.json",
+    "REPORTS/node_verification_subfamily_parity_report.json"
+  ],
+  "required_export_reports": [
+    "reports/node_self_check_report.json",
+    "reports/node_theorem_discharge_report.json"
+  ],
+  "required_checks": [
+    "main_node_parity_ok",
+    "main_node_subfamily_ok",
+    "repo_self_check_ok",
+    "repo_discharge_ok",
+    "primitive_identity_match"
+  ],
+  "required_workflows": [
+    "repo_exports/node_second_line_repo/.github/workflows/node-second-line-parity-gate.yml",
+    "repo_exports/node_second_line_repo/.github/workflows/node-second-line-cross-repo-artifact.yml"
+  ],
+  "contract_scope": "export_prepared_cross_repo_ci_contract",
+  "truth_boundary": {
+    "what_is_verified": "main-line ingestion of exported Node repo reports plus presence of exported CI workflow templates and contract-required parity checks",
+    "what_is_not_claimed": [
+      "externally hosted repository execution",
+      "independent third-party CI governance",
+      "remote artifact provenance beyond this release artifact"
+    ]
+  },
+  "required_export_reports_base": "repo_exports/node_second_line_repo"
+}

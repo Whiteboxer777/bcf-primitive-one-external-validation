@@ -1,0 +1,16 @@
+{
+  "family": "witness_replay_tamper",
+  "cases": [
+    {
+      "case_id": "witness_replay_tamper_verdict",
+      "mutation": "json_patch",
+      "target": "WITNESS_SET.json",
+      "patch": {
+        "verdict": "ALLOW"
+      },
+      "patch_index": 0,
+      "expected_refusal_code": "REFUSE_WITNESS_REPLAY_FAILED",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "profile_id": "invoice_unsat_v90",
+  "mode": "object",
+  "description": "Unsatisfiable invoice profile for symbolic core testing",
+  "analysis_domains": {
+    "object.currency": {
+      "kind": "enum",
+      "values": [
+        "EUR",
+        "USD"
+      ]
+    }
+  },
+  "root": {
+    "kind": "AND",
+    "children": [
+      {
+        "kind": "EQ",
+        "path": "currency",
+        "value": "EUR",
+        "metadata": {
+          "rule_id": "eur_only"
+        }
+      },
+      {
+        "kind": "EQ",
+        "path": "currency",
+        "value": "USD",
+        "metadata": {
+          "rule_id": "usd_only"
+        }
+      }
+    ]
+  }
+}

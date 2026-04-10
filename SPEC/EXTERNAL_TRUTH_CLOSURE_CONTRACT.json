@@ -1,0 +1,22 @@
+{
+  "title": "EXTERNAL_TRUTH_CLOSURE_CONTRACT",
+  "required_checks": [
+    "bundle_verification",
+    "one_shot_proof",
+    "external_audit",
+    "independent_python_parity",
+    "node_out_of_family_parity",
+    "digest_reconciliation",
+    "artifact_hygiene"
+  ],
+  "required_outputs": [
+    "dist/EXTERNAL_TRUTH_CHAIN.json",
+    "dist/EXTERNAL_TRUTH_VERDICT.json",
+    "dist/external_digest_reconciliation_report.json"
+  ],
+  "non_claims": [
+    "os_or_hardware_non_bypass",
+    "separate_repo_attestation",
+    "whole_family_theorem_prover_closure"
+  ]
+}

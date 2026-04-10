@@ -1,0 +1,25 @@
+{
+  "family": "canonicalization",
+  "cases": [
+    {
+      "case_id": "C14N-A1",
+      "kind": "canonical_pair",
+      "left": "request_semantically_equal_a.json",
+      "right": "request_semantically_equal_b.json",
+      "expected_equal": true
+    },
+    {
+      "case_id": "C14N-A2",
+      "kind": "canonical_pair",
+      "left": "request_semantically_equal_a.json",
+      "right": "request_distinct.json",
+      "expected_equal": false
+    },
+    {
+      "case_id": "C14N-A3",
+      "kind": "canonical_idempotence",
+      "target": "request_semantically_equal_a.json",
+      "expected_stable": true
+    }
+  ]
+}

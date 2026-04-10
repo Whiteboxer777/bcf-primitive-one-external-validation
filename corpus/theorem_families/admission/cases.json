@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "case_id": "ad_allow_case",
+      "expected": "ALLOW",
+      "kind": "runtime_case",
+      "request": "allow_request.json"
+    },
+    {
+      "case_id": "ad_deny_case",
+      "expected": "REFUSAL",
+      "kind": "runtime_case",
+      "request": "deny_request.json"
+    }
+  ],
+  "family": "admission"
+}

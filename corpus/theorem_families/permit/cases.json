@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "case_id": "pa_allow_yields_bound_permit",
+      "expected_authority_kind": "release_bound_action_descriptor",
+      "expected_verdict": "ALLOW",
+      "kind": "runtime_case",
+      "request": "allow_request.json"
+    },
+    {
+      "binding_keys": [
+        "primitive_identity",
+        "bundle_digest",
+        "request_digest",
+        "action_digest"
+      ],
+      "case_id": "pa_permit_binding_contains_bundle_request_action",
+      "kind": "runtime_case",
+      "request": "allow_request.json"
+    }
+  ],
+  "family": "permit"
+}

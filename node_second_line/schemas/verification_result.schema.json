@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "additionalProperties": true,
+      "properties": {
+        "bundle_digest": {
+          "type": "string"
+        },
+        "checks": {
+          "type": "object"
+        },
+        "details": {
+          "type": "object"
+        },
+        "overall_ok": {
+          "const": true,
+          "type": "boolean"
+        },
+        "primitive_identity": {
+          "const": "BCF Primitive One",
+          "type": "string"
+        },
+        "replay_binding": {
+          "additionalProperties": true,
+          "properties": {
+            "bundle_digest": {
+              "type": "string"
+            },
+            "primitive_identity": {
+              "const": "BCF Primitive One",
+              "type": "string"
+            },
+            "request_digest": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "primitive_identity",
+            "bundle_digest",
+            "request_digest"
+          ],
+          "type": "object"
+        },
+        "verification_result": {
+          "enum": [
+            "VERIFIED"
+          ]
+        }
+      },
+      "required": [
+        "primitive_identity",
+        "verification_result",
+        "overall_ok",
+        "bundle_digest",
+        "checks",
+        "details",
+        "replay_binding"
+      ],
+      "type": "object"
+    },
+    {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": true,
+      "properties": {
+        "action_digest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attempted_entrypoint": {
+          "type": "string"
+        },
+        "bundle_digest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checks": {
+          "type": "object"
+        },
+        "details": {
+          "type": "object"
+        },
+        "layer": {
+          "enum": [
+            "bundle",
+            "runtime",
+            "action",
+            "equivalence"
+          ]
+        },
+        "overall_ok": {
+          "const": false,
+          "type": "boolean"
+        },
+        "permit": {
+          "const": false,
+          "type": "boolean"
+        },
+        "permit_binding": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "primitive_identity": {
+          "const": "BCF Primitive One",
+          "type": "string"
+        },
+        "refusal_class": {
+          "enum": [
+            "primitive_identity",
+            "canonicalization",
+            "verification",
+            "request_shape",
+            "request_bounds",
+            "action_binding",
+            "contract_satisfaction",
+            "non_bypass",
+            "equivalence"
+          ]
+        },
+        "refusal_code": {
+          "enum": [
+            "REFUSE_PRIMITIVE_IDENTITY_INVALID",
+            "REFUSE_CANONICALIZATION_FAILED",
+            "REFUSE_REQUIRED_FILES_MISSING",
+            "REFUSE_UNDECLARED_FILE",
+            "REFUSE_CONTRACT_MISMATCH",
+            "REFUSE_MANIFEST_MISMATCH",
+            "REFUSE_COMPILER_PRODUCT_MISMATCH",
+            "REFUSE_CERTIFICATE_INVALID",
+            "REFUSE_GOVERNANCE_INVALID",
+            "REFUSE_VERDICT_SCHEMA_INVALID",
+            "REFUSE_VERIFICATION_SCHEMA_INVALID",
+            "REFUSE_REFUSAL_SCHEMA_INVALID",
+            "REFUSE_PERMIT_SCHEMA_INVALID",
+            "REFUSE_CLAIM_TCB_INVALID",
+            "REFUSE_CLAIM_MATRIX_INVALID",
+            "REFUSE_WITNESS_REPLAY_FAILED",
+            "REFUSE_BUNDLE_VERIFICATION_FAILED",
+            "REFUSE_SCHEMA_INVALID",
+            "REFUSE_REQUEST_OVERSIZE",
+            "REFUSE_ACTION_DESCRIPTOR_INVALID",
+            "REFUSE_VERDICT_NOT_ALLOW",
+            "REFUSE_NON_BYPASS_VIOLATION",
+            "REFUSE_EQUIVALENCE_PARITY_FAILED"
+          ]
+        },
+        "refusal_reasons": {
+          "items": {
+            "enum": [
+              "REFUSE_PRIMITIVE_IDENTITY_INVALID",
+              "REFUSE_CANONICALIZATION_FAILED",
+              "REFUSE_REQUIRED_FILES_MISSING",
+              "REFUSE_UNDECLARED_FILE",
+              "REFUSE_CONTRACT_MISMATCH",
+              "REFUSE_MANIFEST_MISMATCH",
+              "REFUSE_COMPILER_PRODUCT_MISMATCH",
+              "REFUSE_CERTIFICATE_INVALID",
+              "REFUSE_GOVERNANCE_INVALID",
+              "REFUSE_VERDICT_SCHEMA_INVALID",
+              "REFUSE_VERIFICATION_SCHEMA_INVALID",
+              "REFUSE_REFUSAL_SCHEMA_INVALID",
+              "REFUSE_PERMIT_SCHEMA_INVALID",
+              "REFUSE_CLAIM_TCB_INVALID",
+              "REFUSE_CLAIM_MATRIX_INVALID",
+              "REFUSE_WITNESS_REPLAY_FAILED",
+              "REFUSE_BUNDLE_VERIFICATION_FAILED",
+              "REFUSE_SCHEMA_INVALID",
+              "REFUSE_REQUEST_OVERSIZE",
+              "REFUSE_ACTION_DESCRIPTOR_INVALID",
+              "REFUSE_VERDICT_NOT_ALLOW",
+              "REFUSE_NON_BYPASS_VIOLATION",
+              "REFUSE_EQUIVALENCE_PARITY_FAILED"
+            ]
+          },
+          "type": "array"
+        },
+        "replay_binding": {
+          "additionalProperties": true,
+          "properties": {
+            "bundle_digest": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "primitive_identity": {
+              "const": "BCF Primitive One",
+              "type": "string"
+            },
+            "request_digest": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "primitive_identity"
+          ],
+          "type": "object"
+        },
+        "request_digest": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verdict": {
+          "enum": [
+            "REFUSAL"
+          ]
+        },
+        "verification_result": {
+          "enum": [
+            "NOT_VERIFIED"
+          ]
+        }
+      },
+      "required": [
+        "primitive_identity",
+        "permit",
+        "verdict",
+        "refusal_code",
+        "refusal_class",
+        "layer",
+        "replay_binding"
+      ],
+      "title": "BCF Refusal Event",
+      "type": "object"
+    }
+  ],
+  "title": "BCF Verification Result"
+}

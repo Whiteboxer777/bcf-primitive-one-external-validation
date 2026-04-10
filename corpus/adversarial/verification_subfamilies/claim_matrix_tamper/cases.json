@@ -1,0 +1,18 @@
+{
+  "family": "claim_matrix_tamper",
+  "cases": [
+    {
+      "case_id": "claim_matrix_tamper_drop_tests",
+      "mutation": "json_patch",
+      "target": "CLAIM_TEST_MATRIX.json",
+      "patch": {
+        "claims.0": {
+          "claim_id": "BROKEN_C1"
+        }
+      },
+      "patch_index": null,
+      "expected_refusal_code": "REFUSE_CLAIM_MATRIX_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

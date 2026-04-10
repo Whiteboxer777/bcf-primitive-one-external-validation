@@ -1,0 +1,7 @@
+{
+  "action_id": "a2",
+  "kind": "emit_descriptor",
+  "payload": {
+    "target": "ledger"
+  }
+}

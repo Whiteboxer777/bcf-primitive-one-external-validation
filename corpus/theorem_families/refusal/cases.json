@@ -1,0 +1,18 @@
+{
+  "cases": [
+    {
+      "add": "ILLEGAL_TOP_LEVEL.json",
+      "case_id": "ra_multi_failure_primary_required_files",
+      "expected_primary": "REFUSE_REQUIRED_FILES_MISSING",
+      "kind": "multi_failure_missing_and_extra",
+      "remove": "TRUST_ROOTS.json"
+    },
+    {
+      "case_id": "ra_runtime_deny_refusal_code",
+      "expected_primary": "REFUSE_VERDICT_NOT_ALLOW",
+      "kind": "runtime_case",
+      "request": "deny_request.json"
+    }
+  ],
+  "family": "refusal"
+}

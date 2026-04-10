@@ -1,0 +1,119 @@
+{
+  "overall_ok": true,
+  "gate_name": "final_internal_rc_readiness_gate",
+  "required_reports": {
+    "dist/adequacy_matrix_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/theorem_discharge_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/cross_repo_parity_ci_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/mechanized_kernel_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/equivalence_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/adversarial_closure_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/verification_subfamily_completion_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/compiled_backend_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/witness_certificate_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/witness_certificate_expansion_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/whole_family_mechanization_expansion_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/object_canonicalization_impossibility_saturation_report.json": {
+      "exists": true,
+      "overall_ok": true
+    }
+  },
+  "required_docs": {
+    "README.md": true,
+    "SPEC/ADEQUACY_MATRIX.md": true,
+    "SPEC/THEOREM_DISCHARGE_EXECUTABLE_CONTRACT.md": true,
+    "SPEC/CROSS_REPO_PARITY_EXECUTABLE_CONTRACT.md": true,
+    "PROOFS/MECHANIZED_KERNEL_SCOPE.md": true,
+    "SPEC/COMPILED_BACKEND.md": true,
+    "SPEC/COMPILED_BACKEND_EXECUTABLE_CONTRACT.md": true,
+    "PROOFS/COMPILED_BACKEND_SCOPE.md": true,
+    "SPEC/WITNESS_CERTIFICATES.md": true,
+    "SPEC/WITNESS_CERTIFICATES_EXECUTABLE_CONTRACT.md": true,
+    "PROOFS/WITNESS_CERTIFICATES_SCOPE.md": true,
+    "SPEC/WITNESS_CERTIFICATE_EXPANSION.md": true,
+    "SPEC/WITNESS_CERTIFICATE_EXPANSION_EXECUTABLE_CONTRACT.md": true,
+    "PROOFS/WITNESS_CERTIFICATE_EXPANSION_SCOPE.md": true,
+    "SPEC/WHOLE_FAMILY_MECHANIZATION_EXPANSION.md": true,
+    "SPEC/WHOLE_FAMILY_MECHANIZATION_EXPANSION_EXECUTABLE_CONTRACT.md": true,
+    "PROOFS/WHOLE_FAMILY_MECHANIZATION_EXPANSION_SCOPE.md": true,
+    "SPEC/OBJECT_CANONICALIZATION_IMPOSSIBILITY_SATURATION.md": true,
+    "SPEC/OBJECT_CANONICALIZATION_IMPOSSIBILITY_SATURATION_EXECUTABLE_CONTRACT.md": true,
+    "PROOFS/OBJECT_CANONICALIZATION_IMPOSSIBILITY_SATURATION_SCOPE.md": true,
+    "RC_CLAIM_BOUNDARY.md": true,
+    "RC_RESIDUAL_GAPS.md": true
+  },
+  "truth_boundary_checks": {
+    "cross_repo_status_label": "export_prepared_machine_gated_parity_readiness",
+    "theorem_status_truth_sync": {
+      "primitive_identity": "EXECUTABLE_WITNESS_STRONG",
+      "scope": "EXECUTABLE_WITNESS_PARTIAL",
+      "object_model": "EXECUTABLE_WITNESS_STRONG",
+      "canonicalization": "EXECUTABLE_WITNESS_STRONG",
+      "verification": "EXECUTABLE_WITNESS_STRONG",
+      "admission": "EXECUTABLE_WITNESS_STRONG",
+      "refusal": "EXECUTABLE_WITNESS_STRONG",
+      "permit": "EXECUTABLE_WITNESS_STRONG",
+      "determinism_replay": "EXECUTABLE_WITNESS_STRONG",
+      "fail_closed": "EXECUTABLE_WITNESS_STRONG",
+      "no_bypass": "EXECUTABLE_WITNESS_STRONG",
+      "equivalence": "EXECUTABLE_WITNESS_STRONG",
+      "impossibility": "EXECUTABLE_WITNESS_STRONG",
+      "closure": "EXECUTABLE_WITNESS_PARTIAL",
+      "mechanized_kernel_preparation": "EXECUTABLE_WITNESS_STRONG",
+      "admission_normal_form_preparation": "EXECUTABLE_WITNESS_STRONG",
+      "compiled_backend_preparation": "EXECUTABLE_WITNESS_STRONG",
+      "witness_certificate_preparation": "EXECUTABLE_WITNESS_STRONG",
+      "whole_family_mechanization_expansion": "EXECUTABLE_WITNESS_STRONG",
+      "object_canonicalization_impossibility_saturation": "EXECUTABLE_WITNESS_STRONG",
+      "witness_certificate_expansion": "EXECUTABLE_WITNESS_STRONG"
+    }
+  },
+  "residual_gaps": [
+    {
+      "gap_id": "RG-04",
+      "title": "Fully external repo and CI execution",
+      "status": "OPEN",
+      "exact_meaning": "Cross-repo parity is export-prepared and machine-gated inside this artifact line, but not yet executed by an actually external hosted repository and independent CI governance boundary."
+    },
+    {
+      "gap_id": "RG-05",
+      "title": "Whole-family mechanized theorem discharge",
+      "status": "OPEN",
+      "exact_meaning": "A real mechanized kernel plus ANF/compiled/witness expansion exists, but whole-family theorem-prover-grade discharge across the complete primitive family is not yet present."
+    }
+  ],
+  "issues": []
+}

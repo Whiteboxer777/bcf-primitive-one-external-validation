@@ -1,0 +1,15 @@
+{
+  "family": "refusal_schema_tamper",
+  "cases": [
+    {
+      "case_id": "refusal_schema_tamper_title",
+      "mutation": "json_patch",
+      "target": "REFUSAL.schema.json",
+      "patch": {
+        "title": "Broken Refusal Event"
+      },
+      "expected_refusal_code": "REFUSE_REFUSAL_SCHEMA_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

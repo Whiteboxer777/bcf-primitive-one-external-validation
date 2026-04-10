@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "case_id": "dr_repeat_replay_same_request_same_verdict",
+      "expected": "ALLOW",
+      "kind": "repeat_replay",
+      "request": "allow_request.json"
+    },
+    {
+      "case_id": "dr_repeat_runtime_same_request_same_binding",
+      "expected": "ALLOW",
+      "kind": "repeat_runtime",
+      "request": "allow_request.json"
+    }
+  ],
+  "family": "determinism_replay"
+}

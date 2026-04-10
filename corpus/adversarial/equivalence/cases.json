@@ -1,0 +1,46 @@
+{
+  "family": "equivalence",
+  "cases": [
+    {
+      "case_id": "EQ-A1",
+      "kind": "verify_mutation",
+      "mutation_ref": "VF-A1",
+      "expected_refusal_code": "REFUSE_REQUIRED_FILES_MISSING"
+    },
+    {
+      "case_id": "EQ-A2",
+      "kind": "verify_mutation",
+      "mutation_ref": "VF-A2",
+      "expected_refusal_code": "REFUSE_UNDECLARED_FILE"
+    },
+    {
+      "case_id": "EQ-A3",
+      "kind": "verify_mutation",
+      "mutation_ref": "VF-A4",
+      "expected_refusal_code": "REFUSE_MANIFEST_MISMATCH"
+    },
+    {
+      "case_id": "EQ-A4",
+      "kind": "runtime_request",
+      "request_file": "allow_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "ALLOW"
+    },
+    {
+      "case_id": "EQ-A5",
+      "kind": "runtime_request",
+      "request_file": "deny_vendor_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_VERDICT_NOT_ALLOW"
+    },
+    {
+      "case_id": "EQ-A6",
+      "kind": "runtime_request",
+      "request_file": "schema_invalid_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_SCHEMA_INVALID"
+    }
+  ]
+}

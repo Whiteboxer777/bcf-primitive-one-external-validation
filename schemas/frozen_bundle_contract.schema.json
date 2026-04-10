@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BCF Frozen Bundle Contract",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "manifest_name",
+    "manifest_scoped_files",
+    "governance_files",
+    "required_files",
+    "allowed_top_level_files",
+    "runtime_request_limits",
+    "verdict_schema_name",
+    "frozen_law_sheet",
+    "claim_name",
+    "tcb_report_name",
+    "semantics",
+    "contract_digest"
+  ],
+  "additionalProperties": true
+}

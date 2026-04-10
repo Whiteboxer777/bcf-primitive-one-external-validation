@@ -1,0 +1,11 @@
+{
+  "family": "claim_tcb_tamper",
+  "cases": [
+    {
+      "case_id": "claim_tcb_tamper_flags",
+      "mutation": "claim_tcb_tamper",
+      "expected_refusal_code": "REFUSE_CLAIM_TCB_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

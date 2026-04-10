@@ -1,0 +1,338 @@
+{
+  "overall_ok": true,
+  "gate_name": "whole_family_theorem_discharge_gate",
+  "discharge_grade": "FULL_FAMILY_MECHANIZED_EXECUTABLE_WITNESS",
+  "mechanized_kernel_discharge": {
+    "overall_ok": true,
+    "kernel_k1_k6": {
+      "overall_ok": true,
+      "counters": {
+        "states_checked": 4096,
+        "allow_states": 1,
+        "refusal_states": 4095
+      },
+      "scope": [
+        "K1 verdict universe / totality core",
+        "K2 verification necessity core",
+        "K3 fail-closed core",
+        "K4 admission biconditional core",
+        "K5 no-bypass core",
+        "K6 canonicalization determinism/idempotence subset core"
+      ]
+    },
+    "extended_k7_k14": {
+      "overall_ok": true,
+      "theorems": {
+        "K7": {
+          "description": "unique_allow",
+          "ok": true,
+          "allow_count": 1,
+          "expected": 1
+        },
+        "K8": {
+          "description": "independent_predicate_load_bearing",
+          "ok": true,
+          "predicate_results": {
+            "primitive_valid": true,
+            "bundle_valid": true,
+            "manifest_satisfied": true,
+            "verification_succeeded": true,
+            "request_valid": true,
+            "shape_satisfied": true,
+            "bounds_satisfied": true,
+            "contract_satisfied": true,
+            "action_binding_satisfied": true,
+            "witness_satisfied": true,
+            "no_fail_closed_trigger": true,
+            "official_positive_path": true
+          }
+        },
+        "K9": {
+          "description": "fail_closed_monotonicity",
+          "ok": true,
+          "combinations_tested": 132,
+          "failures": []
+        },
+        "K10": {
+          "description": "verification_admission_strict_coupling",
+          "ok": true,
+          "results": {
+            "primitive_valid": {
+              "verify_boundary": "NOT_VERIFIED",
+              "admit": "REFUSAL",
+              "coupling_ok": true
+            },
+            "bundle_valid": {
+              "verify_boundary": "NOT_VERIFIED",
+              "admit": "REFUSAL",
+              "coupling_ok": true
+            },
+            "manifest_satisfied": {
+              "verify_boundary": "NOT_VERIFIED",
+              "admit": "REFUSAL",
+              "coupling_ok": true
+            },
+            "verification_succeeded": {
+              "verify_boundary": "NOT_VERIFIED",
+              "admit": "REFUSAL",
+              "coupling_ok": true
+            },
+            "no_fail_closed_trigger": {
+              "verify_boundary": "NOT_VERIFIED",
+              "admit": "REFUSAL",
+              "coupling_ok": true
+            }
+          }
+        },
+        "K11": {
+          "description": "full_canonicalization_mechanization",
+          "ok": true,
+          "files_tested": 108,
+          "failures": []
+        },
+        "K12": {
+          "description": "digest_binding_determinism",
+          "ok": true,
+          "files_tested": 92,
+          "unique_digests": 51,
+          "failures": []
+        },
+        "K13": {
+          "description": "refusal_algebra_completeness",
+          "ok": true,
+          "refusal_states_tested": 4095,
+          "failures": []
+        },
+        "K14": {
+          "description": "cross_implementation_equivalence",
+          "ok": true,
+          "primary_vs_independent": {
+            "ok": true,
+            "profiles_tested": 3,
+            "rows": [
+              {
+                "profile": "examples/canonical/invoice_profile.json",
+                "verify_parity": true,
+                "allow_verdict_parity": true,
+                "deny_verdict_parity": true,
+                "primary_allow": "ALLOW",
+                "independent_allow": "ALLOW",
+                "primary_deny": "REFUSAL",
+                "independent_deny": "REFUSAL",
+                "ok": true
+              },
+              {
+                "profile": "examples/canonical/invoice_profile_stricter.json",
+                "verify_parity": true,
+                "allow_verdict_parity": true,
+                "deny_verdict_parity": true,
+                "primary_allow": "ALLOW",
+                "independent_allow": "ALLOW",
+                "primary_deny": "REFUSAL",
+                "independent_deny": "REFUSAL",
+                "ok": true
+              },
+              {
+                "profile": "examples/canonical/invoice_profile_weaker.json",
+                "verify_parity": true,
+                "allow_verdict_parity": true,
+                "deny_verdict_parity": true,
+                "primary_allow": "ALLOW",
+                "independent_allow": "ALLOW",
+                "primary_deny": "REFUSAL",
+                "independent_deny": "REFUSAL",
+                "ok": true
+              }
+            ]
+          },
+          "node_parity": {
+            "ok": true,
+            "source": "dist_report"
+          }
+        }
+      }
+    },
+    "full_scope": [
+      "K1 verdict universe / totality core",
+      "K2 verification necessity core",
+      "K3 fail-closed core",
+      "K4 admission biconditional core",
+      "K5 no-bypass core",
+      "K6 canonicalization determinism/idempotence subset core",
+      "K7 unique ALLOW (exactly 1 of 4096 states)",
+      "K8 independent predicate load-bearing (each of 12 predicates individually decisive)",
+      "K9 fail-closed monotonicity (adding constraints preserves REFUSAL)",
+      "K10 verification-admission strict coupling (5 verification predicates each block both gates)",
+      "K11 full canonicalization mechanization (complete corpus + schemas + examples)",
+      "K12 digest binding determinism (SHA-256 stability and collision-resistance over corpus)",
+      "K13 refusal algebra completeness (every REFUSAL has identifiable failing predicates)",
+      "K14 cross-implementation equivalence (primary vs independent vs node on all profiles)"
+    ]
+  },
+  "existing_gate_verification": {
+    "ok": true,
+    "reports": {
+      "mechanized_kernel_gate_report": {
+        "ok": true
+      },
+      "admission_normal_form_gate_report": {
+        "ok": true
+      },
+      "compiled_backend_gate_report": {
+        "ok": true
+      },
+      "witness_certificate_gate_report": {
+        "ok": true
+      },
+      "whole_family_mechanization_expansion_report": {
+        "ok": true
+      },
+      "schema_validation_report": {
+        "ok": true
+      },
+      "equivalence_report": {
+        "ok": true
+      },
+      "theorem_family_corpus_report": {
+        "ok": true
+      },
+      "adversarial_closure_report": {
+        "ok": true
+      },
+      "verification_subfamily_completion_report": {
+        "ok": true
+      },
+      "independent_second_implementation_parity_report": {
+        "ok": true
+      },
+      "object_canonicalization_impossibility_saturation_report": {
+        "ok": true
+      },
+      "node_out_of_family_parity_report": {
+        "ok": true,
+        "optional": true
+      },
+      "node_verification_subfamily_parity_report": {
+        "ok": true,
+        "optional": true
+      },
+      "witness_certificate_expansion_report": {
+        "ok": true,
+        "optional": true
+      }
+    }
+  },
+  "refusal_permit_algebra": {
+    "ok": true,
+    "permit_algebra": {
+      "verdict_is_allow": true,
+      "has_primitive_identity": true,
+      "has_bundle_digest": true,
+      "has_request_digest": true,
+      "has_action_digest": true,
+      "has_witness_certificate": true,
+      "witness_valid": true
+    },
+    "refusal_algebra": {
+      "verdict_is_refusal": true,
+      "has_refusal_code": true,
+      "has_refusal_class": true,
+      "has_decisive_rule_ids": true,
+      "has_witness_certificate": true,
+      "witness_valid": true
+    },
+    "replay_determinism": {
+      "replay_allow_matches": true,
+      "replay_deny_matches": true,
+      "replay_allow_witness_valid": true,
+      "replay_deny_witness_valid": true
+    },
+    "no_bypass_enforcement": {
+      "refusal_code_correct": true,
+      "verdict_is_refusal": true,
+      "witness_valid": true
+    }
+  },
+  "witness_chain_integrity": {
+    "ok": true,
+    "paths": {
+      "verification": {
+        "ok": true,
+        "schema_ok": true,
+        "source_digest_ok": true,
+        "certificate_digest_ok": true,
+        "certificate_type": "verification_witness"
+      },
+      "permit": {
+        "ok": true,
+        "schema_ok": true,
+        "source_digest_ok": true,
+        "certificate_digest_ok": true,
+        "certificate_type": "permit_witness"
+      },
+      "refusal": {
+        "ok": true,
+        "schema_ok": true,
+        "source_digest_ok": true,
+        "certificate_digest_ok": true,
+        "certificate_type": "refusal_witness"
+      },
+      "replay_allow": {
+        "ok": true,
+        "schema_ok": true,
+        "source_digest_ok": true,
+        "certificate_digest_ok": true,
+        "certificate_type": "permit_witness"
+      },
+      "replay_deny": {
+        "ok": true,
+        "schema_ok": true,
+        "source_digest_ok": true,
+        "certificate_digest_ok": true,
+        "certificate_type": "refusal_witness"
+      },
+      "no_bypass": {
+        "ok": true,
+        "schema_ok": true,
+        "source_digest_ok": true,
+        "certificate_digest_ok": true,
+        "certificate_type": "refusal_witness"
+      }
+    }
+  },
+  "theorem_family_coverage": {
+    "ok": true,
+    "total_families": 21,
+    "strong": 21,
+    "partial": 0,
+    "failed": []
+  },
+  "truth_boundary": {
+    "status_label": "full_family_mechanized_executable_witness_discharge",
+    "what_is_discharged": [
+      "K1-K6: kernel-scoped abstract proof over 4096 finite states",
+      "K7: unique ALLOW state (exactly 1 of 4096)",
+      "K8: all 12 predicates independently load-bearing",
+      "K9: fail-closed monotonicity (weakening any predicate preserves REFUSAL)",
+      "K10: verification-admission strict coupling (5 verification predicates)",
+      "K11: full canonicalization mechanization over complete corpus",
+      "K12: digest binding determinism and collision-resistance",
+      "K13: refusal algebra completeness (every REFUSAL has identifiable cause)",
+      "K14: cross-implementation equivalence (primary vs independent vs node)",
+      "All 12+ existing gates pass with concrete evidence",
+      "Refusal/permit algebra verified on real bundle execution",
+      "Witness-certificate chain integrity across all 6 execution paths",
+      "All theorem families have EXECUTABLE_WITNESS_STRONG evidence"
+    ],
+    "formal_coverage": {
+      "abstract_states": 4096,
+      "theorems_mechanized": 14,
+      "execution_paths_witnessed": 6,
+      "implementation_lines_parity_tested": 3,
+      "gate_reports_verified": "12+ required"
+    },
+    "what_is_not_claimed": [
+      "Formal theorem-prover (Lean/Coq/Isabelle) machine-checked proof"
+    ]
+  }
+}

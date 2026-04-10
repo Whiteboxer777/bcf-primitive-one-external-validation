@@ -1,0 +1,81 @@
+{
+  "independent_overall_ok": true,
+  "node_overall_ok": true,
+  "overall_ok": true,
+  "reconciliation": {
+    "independent_second_implementation": {
+      "allow_replay": {
+        "bundle_digest_primary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "bundle_digest_secondary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "decision_class_primary": "ALLOW",
+        "decision_class_secondary": "ALLOW",
+        "parity_ok": true
+      },
+      "allow_runtime": {
+        "bundle_digest_primary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "bundle_digest_secondary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "decision_class_primary": "ALLOW",
+        "decision_class_secondary": "ALLOW",
+        "parity_ok": true
+      },
+      "deny_replay": {
+        "bundle_digest_primary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "bundle_digest_secondary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "decision_class_primary": "REFUSAL",
+        "decision_class_secondary": "REFUSAL",
+        "parity_ok": true
+      },
+      "deny_runtime": {
+        "bundle_digest_primary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "bundle_digest_secondary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "decision_class_primary": "REFUSAL",
+        "decision_class_secondary": "REFUSAL",
+        "parity_ok": true
+      },
+      "verify": {
+        "bundle_digest_primary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "bundle_digest_secondary": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "decision_class_primary": "VERIFIED",
+        "decision_class_secondary": "VERIFIED",
+        "parity_ok": true
+      }
+    },
+    "node_out_of_family_second_line": {
+      "allow_replay": {
+        "bundle_digest_primary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "bundle_digest_secondary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class_primary": "ALLOW",
+        "decision_class_secondary": "ALLOW",
+        "parity_ok": true
+      },
+      "allow_runtime": {
+        "bundle_digest_primary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "bundle_digest_secondary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class_primary": "ALLOW",
+        "decision_class_secondary": "ALLOW",
+        "parity_ok": true
+      },
+      "deny_replay": {
+        "bundle_digest_primary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "bundle_digest_secondary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class_primary": "REFUSAL",
+        "decision_class_secondary": "REFUSAL",
+        "parity_ok": true
+      },
+      "deny_runtime": {
+        "bundle_digest_primary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "bundle_digest_secondary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class_primary": "REFUSAL",
+        "decision_class_secondary": "REFUSAL",
+        "parity_ok": true
+      },
+      "verify": {
+        "bundle_digest_primary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "bundle_digest_secondary": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class_primary": "VERIFIED",
+        "decision_class_secondary": "VERIFIED",
+        "parity_ok": true
+      }
+    }
+  }
+}

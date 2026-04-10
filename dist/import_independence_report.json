@@ -1,0 +1,1644 @@
+{
+  "forbidden_import_count": 0,
+  "overall_ok": true,
+  "packages": {
+    "bcf_primitive": {
+      "allowed_internal": [
+        "bcf_primitive",
+        "bcf_primitive_verifier",
+        "bcf_trust_kernel"
+      ],
+      "files_checked": 16,
+      "imports": [
+        {
+          "file": "src/bcf_primitive/__init__.py",
+          "imports": []
+        },
+        {
+          "file": "src/bcf_primitive/admission_normal_form.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.admission_normal_form",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/capsule.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "shutil",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "zipfile",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/cli.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "argparse",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "capsule",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "compiler",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "proof",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "runtime",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "strict_json",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "verifier",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/common.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.common",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/compiled_backend.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.compiled_backend",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/compiler.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "contract",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "governance",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "kernel_support",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "witness_certificate",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 11,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 12,
+              "module": "strict_json",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 13,
+              "module": "admission_normal_form",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 14,
+              "module": "compiled_backend",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/contract.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.contract",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/governance.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.governance",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/kernel_support.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.kernel_support",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/proof.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "shutil",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "tempfile",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "compiler",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "runtime",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "strict_json",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "verifier",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/refusal.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.refusal",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/runtime.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 3,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "contract",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "kernel_support",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 11,
+              "module": "verifier",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 12,
+              "module": "witness_certificate",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/strict_json.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.strict_json",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/verifier.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_primitive_verifier.verifier",
+              "status": "allowed",
+              "target_top_package": "bcf_primitive_verifier"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive/witness_certificate.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.witness_certificate",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        }
+      ]
+    },
+    "bcf_primitive_independent": {
+      "allowed_internal": [
+        "bcf_primitive_independent",
+        "bcf_trust_kernel"
+      ],
+      "files_checked": 10,
+      "imports": [
+        {
+          "file": "src/bcf_primitive_independent/__init__.py",
+          "imports": []
+        },
+        {
+          "file": "src/bcf_primitive_independent/admission_normal_form.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 6,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 7,
+              "module": "hashlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 8,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 11,
+              "module": "semantic_core",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 220,
+              "module": "semantic_core",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/common.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 3,
+              "module": "hashlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 4,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 6,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/compiled_backend.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 6,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "admission_normal_form",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "semantic_core",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 88,
+              "module": "semantic_core",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/profile_eval.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 2,
+              "module": "semantic_core",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/refusal.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "common",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/runtime.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 3,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.witness_certificate",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "semantic_core",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 11,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 12,
+              "module": "verifier",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/semantic_core.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 8,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 10,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 11,
+              "module": "itertools",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 12,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 14,
+              "module": "strict_json",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 617,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 265,
+              "module": "re",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/strict_json.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 5,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 6,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_independent/verifier.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 2,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "bcf_trust_kernel.contract",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "bcf_trust_kernel.governance",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "semantic_core",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 8,
+              "module": "bcf_trust_kernel.refusal",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "admission_normal_form",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 11,
+              "module": "compiled_backend",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 12,
+              "module": "bcf_trust_kernel.witness_certificate",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        }
+      ]
+    },
+    "bcf_primitive_verifier": {
+      "allowed_internal": [
+        "bcf_primitive_verifier",
+        "bcf_trust_kernel"
+      ],
+      "files_checked": 13,
+      "imports": [
+        {
+          "file": "src/bcf_primitive_verifier/__init__.py",
+          "imports": []
+        },
+        {
+          "file": "src/bcf_primitive_verifier/admission_normal_form.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.admission_normal_form",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/cli.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "argparse",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 2,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 3,
+              "module": "runtime",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "strict_json",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "verifier",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/common.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.common",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/compiled_backend.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.compiled_backend",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/contract.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.contract",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/governance.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.governance",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/kernel_support.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.kernel_support",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/refusal.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.refusal",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/runtime.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 2,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 3,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "contract",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "kernel_support",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "verifier",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "witness_certificate",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/strict_json.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.strict_json",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/verifier.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 2,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "contract",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "governance",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "kernel_support",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "refusal",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "witness_certificate",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "admission_normal_form",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 11,
+              "module": "compiled_backend",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_primitive_verifier/witness_certificate.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "bcf_trust_kernel.witness_certificate",
+              "status": "allowed",
+              "target_top_package": "bcf_trust_kernel"
+            }
+          ]
+        }
+      ]
+    },
+    "bcf_trust_kernel": {
+      "allowed_internal": [
+        "bcf_trust_kernel"
+      ],
+      "files_checked": 10,
+      "imports": [
+        {
+          "file": "src/bcf_trust_kernel/__init__.py",
+          "imports": []
+        },
+        {
+          "file": "src/bcf_trust_kernel/admission_normal_form.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 2,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 5,
+              "module": "hashlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 6,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 9,
+              "module": "kernel_support",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 218,
+              "module": "kernel_support",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/common.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 3,
+              "module": "hashlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 4,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 6,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/compiled_backend.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 6,
+              "module": "admission_normal_form",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "common",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 8,
+              "module": "kernel_support",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 86,
+              "module": "kernel_support",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/contract.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 2,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "common",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/governance.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 3,
+              "module": "base64",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 4,
+              "module": "hashlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 7,
+              "module": "cryptography.exceptions",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 8,
+              "module": "cryptography.hazmat.primitives.asymmetric.ed25519",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 10,
+              "module": "common",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/kernel_support.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "itertools",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 7,
+              "module": "strict_json",
+              "status": "relative-local"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 610,
+              "module": "dataclasses",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 258,
+              "module": "re",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/refusal.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 2,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 4,
+              "module": "witness_certificate",
+              "status": "relative-local"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/strict_json.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "import",
+              "line": 3,
+              "module": "json",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 4,
+              "module": "pathlib",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 5,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            }
+          ]
+        },
+        {
+          "file": "src/bcf_trust_kernel/witness_certificate.py",
+          "imports": [
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 1,
+              "module": "__future__",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 0,
+              "line": 3,
+              "module": "typing",
+              "status": "external-or-stdlib"
+            },
+            {
+              "kind": "from",
+              "level": 1,
+              "line": 5,
+              "module": "common",
+              "status": "relative-local"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pass_id": "INDEPENDENCE_CLOSURE_AND_TRUST_COMPRESSION_PASS",
+  "policy": {
+    "bcf_primitive": "may import trust kernel and the official verifier facade, but not the independent package",
+    "bcf_primitive_independent": "must remain clean-room relative to primary/verifier families; trust-kernel sharing is explicitly declared and audited",
+    "bcf_primitive_verifier": "may import trust kernel, but not primary or independent package",
+    "bcf_trust_kernel": "frozen minimal shared kernel only"
+  },
+  "violations": []
+}

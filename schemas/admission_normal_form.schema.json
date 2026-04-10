@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BCF Primitive One Admission Normal Form",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "source_kind",
+    "normalized_root",
+    "atom_index",
+    "clauses",
+    "compilation_trace",
+    "anf_digest"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "source_kind": {
+      "const": "dnf_literal_clauses"
+    },
+    "normalized_root": {
+      "type": "object"
+    },
+    "atom_index": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "atom_id",
+          "atom_kind",
+          "atom",
+          "atom_digest"
+        ],
+        "properties": {
+          "atom_id": {
+            "type": "string"
+          },
+          "atom_kind": {
+            "type": "string"
+          },
+          "rule_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "atom": {
+            "type": "object"
+          },
+          "atom_digest": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "clauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "literals"
+        ],
+        "properties": {
+          "literals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "atom_id",
+                "polarity",
+                "atom"
+              ],
+              "properties": {
+                "atom_id": {
+                  "type": "string"
+                },
+                "polarity": {
+                  "enum": [
+                    "positive",
+                    "negative"
+                  ]
+                },
+                "atom": {
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "compilation_trace": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "anf_digest": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

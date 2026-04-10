@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "case_id": "cl_theorem_families_all_present",
+      "kind": "family_presence",
+      "required_families": [
+        "primitive_identity",
+        "scope",
+        "object_model",
+        "canonicalization",
+        "verification",
+        "admission",
+        "refusal",
+        "permit",
+        "determinism_replay",
+        "fail_closed",
+        "no_bypass",
+        "equivalence",
+        "impossibility",
+        "closure"
+      ]
+    },
+    {
+      "case_id": "cl_primary_and_independent_surfaces_present",
+      "kind": "surface_presence",
+      "required_modules": [
+        "src/bcf_primitive/runtime.py",
+        "src/bcf_primitive_verifier/verifier.py",
+        "src/bcf_primitive_independent/runtime.py",
+        "src/bcf_primitive_independent/verifier.py"
+      ]
+    }
+  ],
+  "family": "closure"
+}

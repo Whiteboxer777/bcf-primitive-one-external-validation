@@ -1,0 +1,219 @@
+{
+  "duplicate_group_count": 10,
+  "duplicate_groups": [
+    {
+      "allowed": true,
+      "digest": "10b785fe1787919bc1f240c6371e0d385f9ddd2606d04e3cd6cc5e7e34936ee7",
+      "files": [
+        "src/bcf_primitive/refusal.py",
+        "src/bcf_primitive_verifier/refusal.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/refusal.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/refusal.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "1152b8f21fea8404be01409ff2e90cb85cbf75b85cf1054768d433db6b6679b2",
+      "files": [
+        "src/bcf_primitive/__init__.py",
+        "src/bcf_primitive_independent/__init__.py",
+        "src/bcf_primitive_verifier/__init__.py",
+        "src/bcf_trust_kernel/__init__.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_trust_kernel/__init__.py",
+          "reason": "package initializer"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/__init__.py",
+          "reason": "package initializer"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/__init__.py",
+          "reason": "package initializer"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_independent/__init__.py",
+          "reason": "package initializer"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "2b6d885055717434cb6864188fb44ae1c8c5c911d3d7c9fdd843c8916ca61f3f",
+      "files": [
+        "src/bcf_primitive/common.py",
+        "src/bcf_primitive_verifier/common.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/common.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/common.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "3b9be7a00a0cf42348aa823eddebae06452048758b2364481e8cb43233600a7f",
+      "files": [
+        "src/bcf_primitive/kernel_support.py",
+        "src/bcf_primitive_verifier/kernel_support.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/kernel_support.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/kernel_support.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "5117314df740e31532f1c50a6308574632bf9e9baa49fd4b3106eb92bfc397bc",
+      "files": [
+        "src/bcf_primitive/governance.py",
+        "src/bcf_primitive_verifier/governance.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/governance.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/governance.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "60495761e5211185d0497e44cb18d477a8f0e40479a1d0447995504afaab1145",
+      "files": [
+        "src/bcf_primitive/admission_normal_form.py",
+        "src/bcf_primitive_verifier/admission_normal_form.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/admission_normal_form.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/admission_normal_form.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "7a70cd20626148d54546a66c273a144f8fcb7f4b6c0113ce09b36fc16fe2e0ab",
+      "files": [
+        "src/bcf_primitive/strict_json.py",
+        "src/bcf_primitive_verifier/strict_json.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/strict_json.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/strict_json.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "dac16771dd48443c6a8a043c91222efaa6fd5b8b5426504e3e3e96cf0f760893",
+      "files": [
+        "src/bcf_primitive/compiled_backend.py",
+        "src/bcf_primitive_verifier/compiled_backend.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/compiled_backend.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/compiled_backend.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "f47fe030ef652e926a41bd819d92b85987ea350e4fd5e4483e83054cffd0a5d5",
+      "files": [
+        "src/bcf_primitive/witness_certificate.py",
+        "src/bcf_primitive_verifier/witness_certificate.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/witness_certificate.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/witness_certificate.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    },
+    {
+      "allowed": true,
+      "digest": "f900546266dd7f36850317aec4264fa9ce87589dca2a952a7acf1d327077917f",
+      "files": [
+        "src/bcf_primitive/contract.py",
+        "src/bcf_primitive_verifier/contract.py"
+      ],
+      "statuses": [
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive/contract.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        },
+        {
+          "allowed": true,
+          "path": "src/bcf_primitive_verifier/contract.py",
+          "reason": "authorized facade/shared-surface wrapper"
+        }
+      ]
+    }
+  ],
+  "overall_ok": true,
+  "violation_count": 0
+}

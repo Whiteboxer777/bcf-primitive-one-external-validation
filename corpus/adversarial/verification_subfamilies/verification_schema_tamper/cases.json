@@ -1,0 +1,15 @@
+{
+  "family": "verification_schema_tamper",
+  "cases": [
+    {
+      "case_id": "verification_schema_tamper_title",
+      "mutation": "json_patch",
+      "target": "VERIFICATION_RESULT.schema.json",
+      "patch": {
+        "title": "Broken Verification Result"
+      },
+      "expected_refusal_code": "REFUSE_VERIFICATION_SCHEMA_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

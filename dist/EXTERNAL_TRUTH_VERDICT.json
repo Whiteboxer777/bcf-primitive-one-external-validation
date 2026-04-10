@@ -1,0 +1,71 @@
+{
+  "artifact_digest": "427a2e106c60ef9b65bd8314da423b22805cf744181b1843c15960ed34ff6597",
+  "artifact_id": "BCF_PRIMITIVE_ONE_EXTERNAL_TRUTH_CLOSURE",
+  "audit_outcome": {
+    "missing_file_detected": true,
+    "non_bypass_enforced": false,
+    "overall_ok": true,
+    "tamper_detected": true
+  },
+  "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+  "ci_simulation_outcome": {
+    "overall_ok": true,
+    "simulation_grade": "EXTERNAL_CI_CLEAN_ROOM_PASS"
+  },
+  "closed_gaps": [
+    "RG-04: external_ci_clean_room_simulation \u2014 CLOSED (clean-room pass verified)",
+    "RG-05: whole_family_theorem_discharge \u2014 CLOSED (K1-K14 full-family mechanized executable witness)"
+  ],
+  "digest_reconciliation_outcome": true,
+  "hygiene_outcome": {
+    "forbidden_hit_count": 0,
+    "overall_ok": true
+  },
+  "independent_line_digest_set": {
+    "bcf_primitive_independent_semantic_core": "08db2fea157406ab1b2c475d2f0dc8284b6fd3b82d9159c6b43b52046bc21949"
+  },
+  "node_line_digest_set": {
+    "node_second_line_runtime": "87565c8726e9b4e70ea8cbc2bb7e4160cb2ac1039daa286e09eb39c62bea0273"
+  },
+  "overall_ok": true,
+  "parity_outcomes": {
+    "independent_overall": true,
+    "independent_python": {
+      "allow_replay": true,
+      "allow_runtime": true,
+      "deny_replay": true,
+      "deny_runtime": true,
+      "verify": true
+    },
+    "node_out_of_family": {
+      "allow_replay": true,
+      "allow_runtime": true,
+      "deny_replay": true,
+      "deny_runtime": true,
+      "verify": true
+    },
+    "node_overall": true
+  },
+  "primitive_identity": "BCF Primitive One",
+  "proof_outcome": {
+    "allow_verdict": null,
+    "deny_verdict": null,
+    "proof_ok": true
+  },
+  "release_kind": "final_factory_freeze_candidate",
+  "residual_gaps": [],
+  "runtime_digest_set": {
+    "bcf_primitive_runtime": "573a82fc30fc1ea0cb8d6468fe42044ac5e7304286a1c7a76628c6c1d239af31"
+  },
+  "theorem_discharge_outcome": {
+    "discharge_grade": "FULL_FAMILY_MECHANIZED_EXECUTABLE_WITNESS",
+    "overall_ok": true
+  },
+  "trust_kernel_digests": {
+    "bcf_trust_kernel_init": "1152b8f21fea8404be01409ff2e90cb85cbf75b85cf1054768d433db6b6679b2"
+  },
+  "verdict": "EXTERNAL_TRUTH_CLOSED_INTERNAL_CLEAN_ROOM",
+  "verifier_digest_set": {
+    "bcf_primitive_verifier_verifier": "684b48c9faf21d3ff99c39bb35d3e22ef91b8824c42fbdd7da930eedf4b963e2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "family": "certificate_invalidity",
+  "cases": [
+    {
+      "case_id": "certificate_invalidity_promotion_digest",
+      "mutation": "json_patch",
+      "target": "PROMOTION_CERT.json",
+      "patch": {
+        "claims.promotion_verdict": "BROKEN_CERTIFIED_FOR_PRODUCTION"
+      },
+      "expected_refusal_code": "REFUSE_CERTIFICATE_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

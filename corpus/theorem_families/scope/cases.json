@@ -1,0 +1,15 @@
+{
+  "cases": [
+    {
+      "case_id": "scope_allow_is_bounded_permit",
+      "expected_action_kind": "release_bound_action_descriptor",
+      "kind": "allow_scope_bounded"
+    },
+    {
+      "case_id": "scope_verified_is_boundary_fitness_only",
+      "expected_verification_result": "VERIFIED",
+      "kind": "verified_boundary_fitness"
+    }
+  ],
+  "family": "scope"
+}

@@ -1,0 +1,677 @@
+# THEOREM_DISCHARGE_LEDGER
+
+This ledger couples theorem families directly to executable witnesses, corpus witnesses, parity surfaces, and report artifacts. It does not claim theorem-prover discharge.
+
+Overall status: EXECUTABLE_WITNESS_STRONG
+
+## primitive_identity
+- theorem family: T-PI family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## scope
+- theorem family: T-SC family
+- status: EXECUTABLE_WITNESS_PARTIAL
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## object_model
+- theorem family: T-OM family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## canonicalization
+- theorem family: T-C14N family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## verification
+- theorem family: T-VF family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## admission
+- theorem family: T-AD family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## refusal
+- theorem family: T-RA family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## permit
+- theorem family: T-PA family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## determinism_replay
+- theorem family: T-DET/T-RP family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## fail_closed
+- theorem family: T-FC family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## no_bypass
+- theorem family: T-NB family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## equivalence
+- theorem family: T-EQ family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## impossibility
+- theorem family: T-IMP family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## closure
+- theorem family: T-CL family
+- status: EXECUTABLE_WITNESS_PARTIAL
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## mechanized_kernel_preparation
+- theorem family: Mechanized kernel preparation family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## admission_normal_form_preparation
+- theorem family: ANF kernel compilation family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## compiled_backend_preparation
+- theorem family: Compiled backend preparation family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## witness_certificate_preparation
+- theorem family: Witness certificate preparation family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## witness_certificate_expansion
+- theorem family: Witness certificate expansion family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## whole_family_mechanization_expansion
+- theorem family: Whole-family mechanization expansion family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json
+
+## object_canonicalization_impossibility_saturation
+- theorem family: Object/canonicalization/impossibility saturation family
+- status: EXECUTABLE_WITNESS_STRONG
+- witnesses:
+  - theorem_family_corpus: true
+  - adversarial_closure: true
+  - verification_subfamily_completion: true
+  - node_verification_subfamily_parity: true
+  - parity_surfaces: true
+  - schema_validation: true
+  - mechanized_kernel_gate: true
+  - admission_normal_form_gate: true
+  - compiled_backend_gate: true
+  - witness_certificate_gate: true
+  - witness_certificate_expansion_gate: true
+  - whole_family_mechanization_expansion_gate: true
+  - object_canonicalization_impossibility_saturation_gate: true
+- report_artifacts:
+  - dist/theorem_family_corpus_report.json
+  - dist/adversarial_closure_report.json
+  - dist/verification_subfamily_completion_report.json
+  - dist/node_verification_subfamily_parity_report.json
+  - dist/node_out_of_family_parity_report.json
+  - dist/equivalence_report.json
+  - dist/mechanized_kernel_gate_report.json
+  - dist/admission_normal_form_gate_report.json
+  - dist/compiled_backend_gate_report.json
+  - dist/witness_certificate_gate_report.json
+  - dist/witness_certificate_expansion_report.json
+  - dist/whole_family_mechanization_expansion_report.json
+  - dist/object_canonicalization_impossibility_saturation_report.json

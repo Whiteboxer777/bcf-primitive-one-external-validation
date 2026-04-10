@@ -1,0 +1,118 @@
+{
+  "overall_ok": true,
+  "gate_name": "admission_normal_form_gate",
+  "schema_exists": true,
+  "profile_rows": [
+    {
+      "profile": "examples/canonical/invoice_profile.json",
+      "deterministic": true,
+      "idempotent_bytes": true,
+      "request_results": [
+        {
+          "verdict": "ALLOW",
+          "reference_verdict": "ALLOW",
+          "equivalent_to_reference": true,
+          "clause_results": [
+            true
+          ],
+          "atom_truth": {
+            "A0001": true,
+            "A0002": true,
+            "A0003": true
+          }
+        },
+        {
+          "verdict": "REFUSAL",
+          "reference_verdict": "REFUSAL",
+          "equivalent_to_reference": true,
+          "clause_results": [
+            false
+          ],
+          "atom_truth": {
+            "A0001": false,
+            "A0002": false,
+            "A0003": true
+          }
+        }
+      ],
+      "overall_ok": true
+    },
+    {
+      "profile": "examples/canonical/invoice_profile_stricter.json",
+      "deterministic": true,
+      "idempotent_bytes": true,
+      "request_results": [
+        {
+          "verdict": "ALLOW",
+          "reference_verdict": "ALLOW",
+          "equivalent_to_reference": true,
+          "clause_results": [
+            true
+          ],
+          "atom_truth": {
+            "A0001": true,
+            "A0002": true,
+            "A0003": true
+          }
+        },
+        {
+          "verdict": "REFUSAL",
+          "reference_verdict": "REFUSAL",
+          "equivalent_to_reference": true,
+          "clause_results": [
+            false
+          ],
+          "atom_truth": {
+            "A0001": false,
+            "A0002": false,
+            "A0003": true
+          }
+        }
+      ],
+      "overall_ok": true
+    },
+    {
+      "profile": "examples/canonical/invoice_profile_weaker.json",
+      "deterministic": true,
+      "idempotent_bytes": true,
+      "request_results": [
+        {
+          "verdict": "ALLOW",
+          "reference_verdict": "ALLOW",
+          "equivalent_to_reference": true,
+          "clause_results": [
+            true
+          ],
+          "atom_truth": {
+            "A0001": true,
+            "A0002": true,
+            "A0003": true
+          }
+        },
+        {
+          "verdict": "REFUSAL",
+          "reference_verdict": "REFUSAL",
+          "equivalent_to_reference": true,
+          "clause_results": [
+            false
+          ],
+          "atom_truth": {
+            "A0001": false,
+            "A0002": true,
+            "A0003": true
+          }
+        }
+      ],
+      "overall_ok": true
+    }
+  ],
+  "details": {
+    "bundle_product": {
+      "overall_ok": true,
+      "verify_overall_ok": true,
+      "compiler_emits_anf": true,
+      "compiler_emits_schema": true
+    }
+  },
+  "issues": []
+}

@@ -1,0 +1,159 @@
+{
+  "overall_ok": true,
+  "gate_name": "whole_family_mechanization_expansion_gate",
+  "supporting_reports": {
+    "mechanized_kernel": {
+      "overall_ok": true
+    },
+    "admission_normal_form": {
+      "overall_ok": true
+    },
+    "compiled_backend": {
+      "overall_ok": true
+    },
+    "witness_certificate": {
+      "overall_ok": true
+    }
+  },
+  "parity_rows": [
+    {
+      "profile": "examples/canonical/invoice_profile.json",
+      "request_rows": [
+        {
+          "request_kind": "allow",
+          "reference_verdict": "ALLOW",
+          "anf_verdict": "ALLOW",
+          "compiled_backend_verdict": "ALLOW",
+          "overall_ok": true
+        },
+        {
+          "request_kind": "deny",
+          "reference_verdict": "REFUSAL",
+          "anf_verdict": "REFUSAL",
+          "compiled_backend_verdict": "REFUSAL",
+          "overall_ok": true
+        }
+      ],
+      "overall_ok": true
+    },
+    {
+      "profile": "examples/canonical/invoice_profile_stricter.json",
+      "request_rows": [
+        {
+          "request_kind": "allow",
+          "reference_verdict": "ALLOW",
+          "anf_verdict": "ALLOW",
+          "compiled_backend_verdict": "ALLOW",
+          "overall_ok": true
+        },
+        {
+          "request_kind": "deny",
+          "reference_verdict": "REFUSAL",
+          "anf_verdict": "REFUSAL",
+          "compiled_backend_verdict": "REFUSAL",
+          "overall_ok": true
+        }
+      ],
+      "overall_ok": true
+    },
+    {
+      "profile": "examples/canonical/invoice_profile_weaker.json",
+      "request_rows": [
+        {
+          "request_kind": "allow",
+          "reference_verdict": "ALLOW",
+          "anf_verdict": "ALLOW",
+          "compiled_backend_verdict": "ALLOW",
+          "overall_ok": true
+        },
+        {
+          "request_kind": "deny",
+          "reference_verdict": "REFUSAL",
+          "anf_verdict": "REFUSAL",
+          "compiled_backend_verdict": "REFUSAL",
+          "overall_ok": true
+        }
+      ],
+      "overall_ok": true
+    }
+  ],
+  "witness_rows": {
+    "verification": {
+      "ok": true,
+      "schema_ok": true,
+      "source_digest_ok": true,
+      "certificate_digest_ok": true,
+      "certificate_type": "verification_witness",
+      "source_verdict": "VERIFIED"
+    },
+    "permit": {
+      "ok": true,
+      "schema_ok": true,
+      "source_digest_ok": true,
+      "certificate_digest_ok": true,
+      "certificate_type": "permit_witness",
+      "source_verdict": "ALLOW"
+    },
+    "refusal": {
+      "ok": true,
+      "schema_ok": true,
+      "source_digest_ok": true,
+      "certificate_digest_ok": true,
+      "certificate_type": "refusal_witness",
+      "source_verdict": "REFUSAL"
+    },
+    "replay_allow": {
+      "ok": true,
+      "schema_ok": true,
+      "source_digest_ok": true,
+      "certificate_digest_ok": true,
+      "certificate_type": "permit_witness",
+      "source_verdict": "ALLOW"
+    },
+    "replay_refusal": {
+      "ok": true,
+      "schema_ok": true,
+      "source_digest_ok": true,
+      "certificate_digest_ok": true,
+      "certificate_type": "refusal_witness",
+      "source_verdict": "REFUSAL"
+    },
+    "no_bypass": {
+      "ok": true,
+      "schema_ok": true,
+      "source_digest_ok": true,
+      "certificate_digest_ok": true,
+      "certificate_type": "refusal_witness",
+      "source_verdict": "REFUSAL"
+    }
+  },
+  "fail_closed_no_bypass_checks": {
+    "runtime_deny_is_refusal": true,
+    "replay_deny_is_refusal": true,
+    "allow_runtime_is_allow": true,
+    "replay_allow_is_allow": true,
+    "no_bypass_refusal_code": true
+  },
+  "broken_bundle_verification_check": {
+    "overall_ok_false": true,
+    "verification_result_not_verified": true,
+    "witness_ok": true,
+    "refusal_code": "REFUSE_REQUIRED_FILES_MISSING",
+    "expected_refusal": true
+  },
+  "truth_boundary": {
+    "status_label": "executable_witness_whole_family_mechanization_expansion",
+    "what_is_verified": [
+      "reference_to_anf_verdict parity on canonical kernel corpus",
+      "anf_to_compiled_backend verdict parity on canonical kernel corpus",
+      "witness-certificate structural soundness for verification/permit/refusal/replay/no-bypass outputs",
+      "fail-closed and no-bypass preservation on the selected canonical boundary paths"
+    ],
+    "what_is_not_claimed": [
+      "whole-family theorem-prover discharge",
+      "complete object-model mechanization",
+      "complete canonicalization-family mechanization",
+      "full scalable backend correctness beyond current kernel corpus"
+    ]
+  }
+}

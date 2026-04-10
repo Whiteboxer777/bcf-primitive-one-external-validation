@@ -1,0 +1,15 @@
+{
+  "primitive_identity": "BCF Primitive One",
+  "bundle_digest": "x",
+  "request_digest": "y",
+  "action_digest": "z",
+  "permit": false,
+  "verdict": "REFUSAL",
+  "refusal_class": "contract_satisfaction",
+  "layer": "runtime",
+  "permit_binding": null,
+  "replay_binding": {
+    "primitive_identity": "BCF Primitive One"
+  },
+  "details": {}
+}

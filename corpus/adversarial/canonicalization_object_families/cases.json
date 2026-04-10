@@ -1,0 +1,17 @@
+[
+  {
+    "case_id": "C14N-OF1",
+    "kind": "action_equal_pair",
+    "expected": "same_digest"
+  },
+  {
+    "case_id": "C14N-OF2",
+    "kind": "action_distinct_pair",
+    "expected": "different_digest"
+  },
+  {
+    "case_id": "C14N-OF3",
+    "kind": "generic_object_idempotence",
+    "expected": "stable_bytes"
+  }
+]

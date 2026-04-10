@@ -1,0 +1,18 @@
+{
+  "profile_id": "invoice_admission_v71",
+  "mode": "object",
+  "description": "Invoice boundary with typed analysis domains",
+  "analysis_domains": {
+    "object.amount": {"kind": "bounded_int", "min": 0, "max": 12000, "step": 1000},
+    "object.currency": {"kind": "enum", "values": ["EUR", "USD"]},
+    "object.vendor": {"kind": "enum", "values": ["ACME", "Globex", "Bad Vendor"]}
+  },
+  "root": {
+    "kind": "AND",
+    "children": [
+      {"kind": "IN", "path": "vendor", "value": ["ACME", "Globex"], "metadata": {"rule_id": "vendor_allowlist"}},
+      {"kind": "EQ", "path": "currency", "value": "EUR", "metadata": {"rule_id": "eur_only"}},
+      {"kind": "RANGE", "path": "amount", "low": 0, "high": 10000, "metadata": {"rule_id": "amount_cap"}}
+    ]
+  }
+}

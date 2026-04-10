@@ -1,0 +1,28 @@
+{
+  "overall_ok": true,
+  "inputs": {
+    "main_node_parity": {
+      "path": "REPORTS/node_out_of_family_parity_report.json",
+      "exists": true
+    },
+    "main_node_subfamily": {
+      "path": "REPORTS/node_verification_subfamily_parity_report.json",
+      "exists": true
+    },
+    "repo_local_discharge": {
+      "path": "repo_exports/node_second_line_repo/reports/node_theorem_discharge_report.json",
+      "exists": true
+    },
+    "repo_local_self_check": {
+      "path": "repo_exports/node_second_line_repo/reports/node_self_check_report.json",
+      "exists": true
+    }
+  },
+  "checks": {
+    "main_node_parity_ok": true,
+    "main_node_subfamily_ok": true,
+    "repo_discharge_ok": true,
+    "repo_self_check_ok": true,
+    "primitive_identity_match": true
+  }
+}

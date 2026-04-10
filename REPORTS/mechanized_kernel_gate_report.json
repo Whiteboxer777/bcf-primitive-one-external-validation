@@ -1,0 +1,37 @@
+{
+  "canonicalization_subset": {
+    "digests": {
+      "distinct": "c266d38c4c5c48563cbd9084b8f261f119bd2cf2c46fc29026d5b6b0eebb5297",
+      "equal_a": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+      "equal_b": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1"
+    },
+    "distinct_pair_distinct_bytes": true,
+    "equal_pair_same_bytes": true,
+    "equal_pair_same_digest": true,
+    "idempotence_a": true,
+    "idempotence_b": true,
+    "idempotence_d": true
+  },
+  "contract_scope": "mechanized_kernel_preparation_gate",
+  "counters": {
+    "allow_states": 1,
+    "refusal_states": 4095,
+    "states_checked": 4096
+  },
+  "failures": [],
+  "kernel_scope": [
+    "K1 verdict universe / totality core",
+    "K2 verification necessity core",
+    "K3 fail-closed core",
+    "K4 admission biconditional core",
+    "K5 no-bypass core",
+    "K6 canonicalization determinism/idempotence subset core"
+  ],
+  "limits": [
+    "This is a finite-state mechanized semantic kernel, not a full theorem prover discharge.",
+    "The canonicalization theorem coverage is subset-scoped to the dedicated request corpus fixtures.",
+    "The checker witnesses the semantic kernel and preparation surface for later formal mechanization."
+  ],
+  "overall_ok": true,
+  "truth_boundary": "finite-state semantic kernel + canonicalization subset witness; not full theorem-prover discharge of the entire primitive family"
+}

@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {
+      "case_id": "nb_direct_runtime_entry_refusal",
+      "expected_code": "REFUSE_NON_BYPASS_VIOLATION",
+      "kind": "no_bypass"
+    }
+  ],
+  "family": "no_bypass"
+}

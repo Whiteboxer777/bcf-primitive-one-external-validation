@@ -1,0 +1,17 @@
+[
+  {
+    "case_id": "OM-A1",
+    "kind": "verification_required_field_removed",
+    "expected": "schema_invalid"
+  },
+  {
+    "case_id": "OM-A2",
+    "kind": "permit_missing_binding",
+    "expected": "schema_invalid"
+  },
+  {
+    "case_id": "OM-A3",
+    "kind": "refusal_code_removed",
+    "expected": "schema_invalid"
+  }
+]

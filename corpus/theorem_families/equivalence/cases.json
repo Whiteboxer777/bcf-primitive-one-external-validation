@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case_id": "eq_primary_vs_independent_allow_parity",
+      "expected": "ALLOW",
+      "kind": "parity_allow",
+      "request": "allow_request.json"
+    },
+    {
+      "case_id": "eq_primary_vs_independent_deny_parity",
+      "expected": "REFUSAL",
+      "kind": "parity_deny",
+      "request": "deny_request.json"
+    },
+    {
+      "case_id": "eq_primary_vs_independent_verify_parity",
+      "expected": "VERIFIED",
+      "kind": "parity_verify"
+    }
+  ],
+  "family": "equivalence"
+}

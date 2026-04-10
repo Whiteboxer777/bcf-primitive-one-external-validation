@@ -1,0 +1,17 @@
+{
+  "family": "verdict_schema_tamper",
+  "cases": [
+    {
+      "case_id": "verdict_schema_tamper_enum",
+      "mutation": "json_patch",
+      "target": "VERDICT.schema.json",
+      "patch": {
+        "properties.verdict.enum": [
+          "ALLOW"
+        ]
+      },
+      "expected_refusal_code": "REFUSE_VERDICT_SCHEMA_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "verification": {
+    "ok": true,
+    "schema_ok": true,
+    "source_digest_ok": true,
+    "certificate_digest_ok": true
+  },
+  "permit": {
+    "ok": true,
+    "schema_ok": true,
+    "source_digest_ok": true,
+    "certificate_digest_ok": true
+  },
+  "refusal": {
+    "ok": true,
+    "schema_ok": true,
+    "source_digest_ok": true,
+    "certificate_digest_ok": true
+  },
+  "replay_refusal": {
+    "ok": true,
+    "schema_ok": true,
+    "source_digest_ok": true,
+    "certificate_digest_ok": true
+  },
+  "sample_bundle_certificates": {
+    "VERIFICATION_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "certificate_digest_ok": true
+    },
+    "PERMIT_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "certificate_digest_ok": true
+    },
+    "REFUSAL_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "certificate_digest_ok": true
+    }
+  },
+  "schema_artifact_present": true,
+  "overall_ok": true
+}

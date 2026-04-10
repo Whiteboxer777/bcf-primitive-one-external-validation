@@ -1,0 +1,52 @@
+[
+  {
+    "case_id": "c14n_equal_forms_collapse",
+    "expect_same": true,
+    "kind": "equal_requests_same_digest",
+    "left": "request_semantically_equal_a.json",
+    "right": "request_semantically_equal_b.json"
+  },
+  {
+    "case_id": "c14n_distinct_forms_stay_distinct",
+    "expect_same": false,
+    "kind": "equal_requests_same_digest",
+    "left": "request_semantically_equal_a.json",
+    "right": "request_distinct.json"
+  },
+  {
+    "case_id": "C14N-S1",
+    "kind": "action_equal_pair",
+    "artifacts": [
+      "action_equal_a.json",
+      "action_equal_b.json"
+    ],
+    "expected": "same_canonical_bytes"
+  },
+  {
+    "case_id": "C14N-S2",
+    "kind": "action_distinct_pair",
+    "artifacts": [
+      "action_equal_a.json",
+      "action_distinct.json"
+    ],
+    "expected": "distinct_canonical_bytes"
+  },
+  {
+    "case_id": "C14N-S3",
+    "kind": "generic_object_equal_pair",
+    "artifacts": [
+      "object_equal_a.json",
+      "object_equal_b.json"
+    ],
+    "expected": "same_canonical_bytes"
+  },
+  {
+    "case_id": "C14N-S4",
+    "kind": "generic_object_distinct_pair",
+    "artifacts": [
+      "object_equal_a.json",
+      "object_distinct.json"
+    ],
+    "expected": "distinct_canonical_bytes"
+  }
+]

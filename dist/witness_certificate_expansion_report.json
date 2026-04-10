@@ -1,0 +1,808 @@
+{
+  "overall_ok": true,
+  "bundle_sample_certificates": {
+    "VERIFICATION_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "schema_errors": [],
+      "claim_set_digest_ok": true,
+      "certificate_digest_ok": true
+    },
+    "PERMIT_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "schema_errors": [],
+      "claim_set_digest_ok": true,
+      "certificate_digest_ok": true
+    },
+    "REFUSAL_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "schema_errors": [],
+      "claim_set_digest_ok": true,
+      "certificate_digest_ok": true
+    },
+    "REPLAY_ALLOW_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "schema_errors": [],
+      "claim_set_digest_ok": true,
+      "certificate_digest_ok": true
+    },
+    "REPLAY_REFUSAL_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "schema_errors": [],
+      "claim_set_digest_ok": true,
+      "certificate_digest_ok": true
+    },
+    "NO_BYPASS_WITNESS_CERT.json": {
+      "ok": true,
+      "schema_ok": true,
+      "schema_errors": [],
+      "claim_set_digest_ok": true,
+      "certificate_digest_ok": true
+    }
+  },
+  "witness_parity": {
+    "verification": {
+      "ok": true,
+      "cores": [
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "verification_witness",
+          "source_verdict": "VERIFIED",
+          "source_kind": "verification_result",
+          "witness_kind": "verification",
+          "witness_scope": "bundle_verification",
+          "binding_kind": "bundle_only",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "verification_witness",
+          "source_verdict": "VERIFIED",
+          "source_kind": "verification_result",
+          "witness_kind": "verification",
+          "witness_scope": "bundle_verification",
+          "binding_kind": "bundle_only",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "verification_witness",
+          "source_verdict": "VERIFIED",
+          "source_kind": "verification_result",
+          "witness_kind": "verification",
+          "witness_scope": "bundle_verification",
+          "binding_kind": "bundle_only",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "verification_witness",
+          "source_verdict": "VERIFIED",
+          "source_kind": "verification_result",
+          "witness_kind": "verification",
+          "witness_scope": "bundle_verification",
+          "binding_kind": "bundle_only",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        }
+      ],
+      "members": [
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "verification_witness",
+            "source_verdict": "VERIFIED",
+            "source_kind": "verification_result",
+            "witness_kind": "verification",
+            "witness_scope": "bundle_verification",
+            "binding_kind": "bundle_only",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "verification_witness",
+            "source_verdict": "VERIFIED",
+            "source_kind": "verification_result",
+            "witness_kind": "verification",
+            "witness_scope": "bundle_verification",
+            "binding_kind": "bundle_only",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "verification_witness",
+            "source_verdict": "VERIFIED",
+            "source_kind": "verification_result",
+            "witness_kind": "verification",
+            "witness_scope": "bundle_verification",
+            "binding_kind": "bundle_only",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "verification_witness",
+            "source_verdict": "VERIFIED",
+            "source_kind": "verification_result",
+            "witness_kind": "verification",
+            "witness_scope": "bundle_verification",
+            "binding_kind": "bundle_only",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        }
+      ]
+    },
+    "permit": {
+      "ok": true,
+      "cores": [
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "permit",
+          "witness_kind": "permit",
+          "witness_scope": "action_release",
+          "binding_kind": "action_release",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": "release_bound_action_descriptor"
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "permit",
+          "witness_kind": "permit",
+          "witness_scope": "action_release",
+          "binding_kind": "action_release",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": "release_bound_action_descriptor"
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "permit",
+          "witness_kind": "permit",
+          "witness_scope": "action_release",
+          "binding_kind": "action_release",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": "release_bound_action_descriptor"
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "permit",
+          "witness_kind": "permit",
+          "witness_scope": "action_release",
+          "binding_kind": "action_release",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": "release_bound_action_descriptor"
+        }
+      ],
+      "members": [
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "permit",
+            "witness_kind": "permit",
+            "witness_scope": "action_release",
+            "binding_kind": "action_release",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": "release_bound_action_descriptor"
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "permit",
+            "witness_kind": "permit",
+            "witness_scope": "action_release",
+            "binding_kind": "action_release",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": "release_bound_action_descriptor"
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "permit",
+            "witness_kind": "permit",
+            "witness_scope": "action_release",
+            "binding_kind": "action_release",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": "release_bound_action_descriptor"
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "permit",
+            "witness_kind": "permit",
+            "witness_scope": "action_release",
+            "binding_kind": "action_release",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": "release_bound_action_descriptor"
+          }
+        }
+      ]
+    },
+    "refusal": {
+      "ok": true,
+      "cores": [
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "action_refusal",
+          "binding_kind": "action_release",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "action_refusal",
+          "binding_kind": "action_release",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "action_refusal",
+          "binding_kind": "action_release",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "action_refusal",
+          "binding_kind": "action_release",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        }
+      ],
+      "members": [
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "action_refusal",
+            "binding_kind": "action_release",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "action_refusal",
+            "binding_kind": "action_release",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "action_refusal",
+            "binding_kind": "action_release",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "action_refusal",
+            "binding_kind": "action_release",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        }
+      ]
+    },
+    "replay_allow": {
+      "ok": true,
+      "cores": [
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "replay_allow",
+          "witness_kind": "permit",
+          "witness_scope": "replay_allow",
+          "binding_kind": "replay",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "replay_allow",
+          "witness_kind": "permit",
+          "witness_scope": "replay_allow",
+          "binding_kind": "replay",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "replay_allow",
+          "witness_kind": "permit",
+          "witness_scope": "replay_allow",
+          "binding_kind": "replay",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "permit_witness",
+          "source_verdict": "ALLOW",
+          "source_kind": "replay_allow",
+          "witness_kind": "permit",
+          "witness_scope": "replay_allow",
+          "binding_kind": "replay",
+          "refusal_code": null,
+          "refusal_class": null,
+          "action_authority_kind": null
+        }
+      ],
+      "members": [
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "replay_allow",
+            "witness_kind": "permit",
+            "witness_scope": "replay_allow",
+            "binding_kind": "replay",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "replay_allow",
+            "witness_kind": "permit",
+            "witness_scope": "replay_allow",
+            "binding_kind": "replay",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "replay_allow",
+            "witness_kind": "permit",
+            "witness_scope": "replay_allow",
+            "binding_kind": "replay",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "permit_witness",
+            "source_verdict": "ALLOW",
+            "source_kind": "replay_allow",
+            "witness_kind": "permit",
+            "witness_scope": "replay_allow",
+            "binding_kind": "replay",
+            "refusal_code": null,
+            "refusal_class": null,
+            "action_authority_kind": null
+          }
+        }
+      ]
+    },
+    "replay_refusal": {
+      "ok": true,
+      "cores": [
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "replay_refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "replay_refusal",
+          "binding_kind": "replay",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "replay_refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "replay_refusal",
+          "binding_kind": "replay",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "replay_refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "replay_refusal",
+          "binding_kind": "replay",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        },
+        {
+          "certificate_version": "WITNESS_CERT_V2",
+          "certificate_scope": "kernel_evidence_carrying_v2",
+          "certificate_type": "refusal_witness",
+          "source_verdict": "REFUSAL",
+          "source_kind": "replay_refusal",
+          "witness_kind": "refusal",
+          "witness_scope": "replay_refusal",
+          "binding_kind": "replay",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_class": "contract_satisfaction",
+          "action_authority_kind": null
+        }
+      ],
+      "members": [
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "replay_refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "replay_refusal",
+            "binding_kind": "replay",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "replay_refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "replay_refusal",
+            "binding_kind": "replay",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "replay_refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "replay_refusal",
+            "binding_kind": "replay",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        },
+        {
+          "ok": true,
+          "schema_ok": true,
+          "schema_errors": [],
+          "source_digest_ok": true,
+          "binding_digest_ok": true,
+          "claim_set_digest_ok": true,
+          "certificate_digest_ok": true,
+          "core": {
+            "certificate_version": "WITNESS_CERT_V2",
+            "certificate_scope": "kernel_evidence_carrying_v2",
+            "certificate_type": "refusal_witness",
+            "source_verdict": "REFUSAL",
+            "source_kind": "replay_refusal",
+            "witness_kind": "refusal",
+            "witness_scope": "replay_refusal",
+            "binding_kind": "replay",
+            "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+            "refusal_class": "contract_satisfaction",
+            "action_authority_kind": null
+          }
+        }
+      ]
+    }
+  },
+  "primary_no_bypass": {
+    "ok": true,
+    "schema_ok": true,
+    "schema_errors": [],
+    "source_digest_ok": true,
+    "binding_digest_ok": true,
+    "claim_set_digest_ok": true,
+    "certificate_digest_ok": true,
+    "core": {
+      "certificate_version": "WITNESS_CERT_V2",
+      "certificate_scope": "kernel_evidence_carrying_v2",
+      "certificate_type": "refusal_witness",
+      "source_verdict": "REFUSAL",
+      "source_kind": "non_bypass_refusal",
+      "witness_kind": "refusal",
+      "witness_scope": "non_bypass_refusal",
+      "binding_kind": "non_bypass",
+      "refusal_code": "REFUSE_NON_BYPASS_VIOLATION",
+      "refusal_class": "non_bypass",
+      "action_authority_kind": null
+    }
+  },
+  "expanded_sample_artifacts_present": true,
+  "node_runtime_source": "pre_generated_cache"
+}

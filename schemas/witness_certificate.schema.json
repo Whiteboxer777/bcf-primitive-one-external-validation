@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BCF Primitive One Witness Certificate",
+  "type": "object",
+  "required": [
+    "primitive_identity",
+    "certificate_version",
+    "certificate_scope",
+    "certificate_type",
+    "source_verdict",
+    "source_kind",
+    "bundle_digest",
+    "source_digest",
+    "binding_digest",
+    "witness_claims",
+    "certificate_digest"
+  ],
+  "properties": {
+    "primitive_identity": {
+      "type": "string",
+      "const": "BCF Primitive One"
+    },
+    "certificate_version": {
+      "type": "string",
+      "const": "WITNESS_CERT_V2"
+    },
+    "certificate_scope": {
+      "type": "string",
+      "const": "kernel_evidence_carrying_v2"
+    },
+    "certificate_type": {
+      "enum": [
+        "verification_witness",
+        "permit_witness",
+        "refusal_witness"
+      ]
+    },
+    "source_verdict": {
+      "enum": [
+        "VERIFIED",
+        "ALLOW",
+        "REFUSAL"
+      ]
+    },
+    "source_kind": {
+      "enum": [
+        "verification_result",
+        "permit",
+        "refusal",
+        "replay_allow",
+        "replay_refusal",
+        "non_bypass_refusal"
+      ]
+    },
+    "bundle_digest": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "request_digest": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "action_digest": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_digest": {
+      "type": "string"
+    },
+    "binding_digest": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "witness_claims": {
+      "type": "object",
+      "required": [
+        "witness_kind",
+        "witness_scope",
+        "binding_kind",
+        "claim_set_digest"
+      ],
+      "properties": {
+        "witness_kind": {
+          "enum": [
+            "verification",
+            "permit",
+            "refusal"
+          ]
+        },
+        "witness_scope": {
+          "enum": [
+            "bundle_verification",
+            "action_release",
+            "action_refusal",
+            "bundle_refusal",
+            "runtime_refusal",
+            "replay_allow",
+            "replay_refusal",
+            "non_bypass_refusal"
+          ]
+        },
+        "binding_kind": {
+          "enum": [
+            "bundle_only",
+            "action_release",
+            "replay",
+            "bundle_failure",
+            "runtime_failure",
+            "non_bypass"
+          ]
+        },
+        "claim_set_digest": {
+          "type": "string"
+        },
+        "verification_result": {
+          "enum": [
+            "VERIFIED",
+            "NOT_VERIFIED"
+          ]
+        },
+        "refusal_code": {
+          "type": "string"
+        },
+        "refusal_class": {
+          "type": "string"
+        },
+        "refusal_reasons_digest": {
+          "type": "string"
+        },
+        "action_authority_kind": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decisive_rule_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "decisive_rule_ids_digest": {
+          "type": "string"
+        },
+        "permit_binding_digest": {
+          "type": "string"
+        },
+        "checks_digest": {
+          "type": "string"
+        },
+        "details_digest": {
+          "type": "string"
+        },
+        "check_truth_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "witness_kind": {
+                "const": "verification"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "verification_result",
+              "checks_digest",
+              "details_digest",
+              "check_truth_count"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "witness_kind": {
+                "const": "permit"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "action_authority_kind",
+              "decisive_rule_ids",
+              "decisive_rule_ids_digest",
+              "permit_binding_digest"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "witness_kind": {
+                "const": "refusal"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "refusal_code",
+              "refusal_class",
+              "refusal_reasons_digest",
+              "details_digest"
+            ]
+          }
+        }
+      ]
+    },
+    "certificate_digest": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

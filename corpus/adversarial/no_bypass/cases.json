@@ -1,0 +1,19 @@
+{
+  "family": "no_bypass",
+  "cases": [
+    {
+      "case_id": "NB-A1",
+      "kind": "no_bypass",
+      "request_file": "allow_request.json",
+      "entrypoint": "direct-runtime-eval",
+      "expected_refusal_code": "REFUSE_NON_BYPASS_VIOLATION"
+    },
+    {
+      "case_id": "NB-A2",
+      "kind": "no_bypass",
+      "request_file": "deny_amount_request.json",
+      "entrypoint": "custom-unsealed-fastpath",
+      "expected_refusal_code": "REFUSE_NON_BYPASS_VIOLATION"
+    }
+  ]
+}

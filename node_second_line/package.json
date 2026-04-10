@@ -1,0 +1,12 @@
+{
+  "name": "bcf-primitive-one-node-second-line",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Out-of-family Node.js second implementation line for BCF Primitive One",
+  "scripts": {
+    "verify": "node ./bin/verify_bundle.mjs",
+    "execute": "node ./bin/execute_runtime.mjs",
+    "replay": "node ./bin/replay_verdict.mjs"
+  }
+}

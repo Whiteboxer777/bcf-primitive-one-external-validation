@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "case_id": "pi_verified_bundle_identity",
+      "expected": "BCF Primitive One",
+      "kind": "verification_identity"
+    },
+    {
+      "case_id": "pi_runtime_allow_identity",
+      "expected": "BCF Primitive One",
+      "kind": "runtime_allow_identity"
+    },
+    {
+      "case_id": "pi_runtime_refusal_identity",
+      "expected": "BCF Primitive One",
+      "kind": "runtime_refusal_identity"
+    }
+  ],
+  "family": "primitive_identity"
+}

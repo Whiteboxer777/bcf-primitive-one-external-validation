@@ -1,0 +1,22 @@
+[
+  {
+    "case_id": "IMP-A1",
+    "kind": "not_verified_bundle_cannot_allow",
+    "expected": "refusal"
+  },
+  {
+    "case_id": "IMP-A2",
+    "kind": "deny_has_no_permit",
+    "expected": "permit_false"
+  },
+  {
+    "case_id": "IMP-A3",
+    "kind": "no_bypass_refusal",
+    "expected": "REFUSE_NON_BYPASS_VIOLATION"
+  },
+  {
+    "case_id": "IMP-A4",
+    "kind": "invalid_action_descriptor_refuses",
+    "expected": "refusal"
+  }
+]

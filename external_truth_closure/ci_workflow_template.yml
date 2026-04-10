@@ -1,0 +1,13 @@
+name: external-truth-closure
+on: [push, workflow_dispatch]
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run external truth closure
+        run: |
+          PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 python external_truth_closure/run_external_truth_closure.py

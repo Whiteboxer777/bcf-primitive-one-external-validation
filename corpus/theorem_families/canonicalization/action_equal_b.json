@@ -1,0 +1,8 @@
+{
+  "payload": {
+    "y": 2,
+    "x": 1
+  },
+  "kind": "emit",
+  "action_id": "act-1"
+}

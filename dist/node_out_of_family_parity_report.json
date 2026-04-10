@@ -1,0 +1,132 @@
+{
+  "cases": {
+    "allow_replay": {
+      "node_second_line": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "ALLOW",
+        "kind": "replay_allow",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": null,
+        "refusal_code": null,
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+        "schema_ok": true
+      },
+      "parity_ok": true,
+      "primary": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "ALLOW",
+        "kind": "replay_allow",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": null,
+        "refusal_code": null,
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+        "schema_ok": true
+      }
+    },
+    "allow_runtime": {
+      "node_second_line": {
+        "authority_kind": "release_bound_action_descriptor",
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "ALLOW",
+        "kind": "permit",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": null,
+        "refusal_code": null,
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+        "schema_ok": true
+      },
+      "parity_ok": true,
+      "primary": {
+        "authority_kind": "release_bound_action_descriptor",
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "ALLOW",
+        "kind": "permit",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": null,
+        "refusal_code": null,
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+        "schema_ok": true
+      }
+    },
+    "deny_replay": {
+      "node_second_line": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "REFUSAL",
+        "kind": "refusal",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": "contract_satisfaction",
+        "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+        "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a",
+        "schema_ok": true
+      },
+      "parity_ok": true,
+      "primary": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "REFUSAL",
+        "kind": "refusal",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": "contract_satisfaction",
+        "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+        "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a",
+        "schema_ok": true
+      }
+    },
+    "deny_runtime": {
+      "node_second_line": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "REFUSAL",
+        "kind": "refusal",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": "contract_satisfaction",
+        "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+        "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a",
+        "schema_ok": true
+      },
+      "parity_ok": true,
+      "primary": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "REFUSAL",
+        "kind": "refusal",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": "contract_satisfaction",
+        "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+        "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a",
+        "schema_ok": true
+      }
+    },
+    "verify": {
+      "node_second_line": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "VERIFIED",
+        "kind": "verification",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": null,
+        "refusal_code": null,
+        "request_digest": null,
+        "schema_ok": true
+      },
+      "parity_ok": true,
+      "primary": {
+        "authority_kind": null,
+        "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+        "decision_class": "VERIFIED",
+        "kind": "verification",
+        "primitive_identity": "BCF Primitive One",
+        "refusal_class": null,
+        "refusal_code": null,
+        "request_digest": null,
+        "schema_ok": true
+      }
+    }
+  },
+  "node_runtime_source": "pre_generated_cache",
+  "overall_ok": true,
+  "target_name": "primary_surface_vs_node_out_of_family_second_line"
+}

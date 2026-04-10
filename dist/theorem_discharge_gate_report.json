@@ -1,0 +1,95 @@
+{
+  "overall_ok": true,
+  "gate_name": "theorem_discharge_gate",
+  "markdown_ledger": "PROOFS/THEOREM_DISCHARGE_LEDGER.md",
+  "json_ledger": "PROOFS/THEOREM_DISCHARGE_LEDGER.json",
+  "policy": "SPEC/THEOREM_DISCHARGE_POLICY.json",
+  "family_count": 21,
+  "exact_status_truth_sync": {
+    "primitive_identity": "EXECUTABLE_WITNESS_STRONG",
+    "scope": "EXECUTABLE_WITNESS_STRONG",
+    "object_model": "EXECUTABLE_WITNESS_STRONG",
+    "canonicalization": "EXECUTABLE_WITNESS_STRONG",
+    "verification": "EXECUTABLE_WITNESS_STRONG",
+    "admission": "EXECUTABLE_WITNESS_STRONG",
+    "refusal": "EXECUTABLE_WITNESS_STRONG",
+    "permit": "EXECUTABLE_WITNESS_STRONG",
+    "determinism_replay": "EXECUTABLE_WITNESS_STRONG",
+    "fail_closed": "EXECUTABLE_WITNESS_STRONG",
+    "no_bypass": "EXECUTABLE_WITNESS_STRONG",
+    "equivalence": "EXECUTABLE_WITNESS_STRONG",
+    "impossibility": "EXECUTABLE_WITNESS_STRONG",
+    "closure": "EXECUTABLE_WITNESS_STRONG",
+    "mechanized_kernel_preparation": "EXECUTABLE_WITNESS_STRONG",
+    "admission_normal_form_preparation": "EXECUTABLE_WITNESS_STRONG",
+    "compiled_backend_preparation": "EXECUTABLE_WITNESS_STRONG",
+    "witness_certificate_preparation": "EXECUTABLE_WITNESS_STRONG",
+    "whole_family_mechanization_expansion": "EXECUTABLE_WITNESS_STRONG",
+    "object_canonicalization_impossibility_saturation": "EXECUTABLE_WITNESS_STRONG",
+    "witness_certificate_expansion": "EXECUTABLE_WITNESS_STRONG"
+  },
+  "required_reports_checked": {
+    "dist/theorem_family_corpus_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/adversarial_closure_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/verification_subfamily_completion_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/node_out_of_family_parity_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/node_verification_subfamily_parity_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/externalized_second_line_parity_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/independent_second_implementation_parity_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/equivalence_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/theorem_discharge_ledger.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/admission_normal_form_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/compiled_backend_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/witness_certificate_gate_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/whole_family_mechanization_expansion_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/object_canonicalization_impossibility_saturation_report.json": {
+      "exists": true,
+      "overall_ok": true
+    },
+    "dist/witness_certificate_expansion_report.json": {
+      "exists": true,
+      "overall_ok": true
+    }
+  },
+  "issues": [],
+  "warnings": []
+}

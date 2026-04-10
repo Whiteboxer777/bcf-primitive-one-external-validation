@@ -1,0 +1,144 @@
+{
+  "authority_level_counts": {
+    "derived_release_artifacts": 1,
+    "externalized_parity_surface": 1,
+    "gate_and_audit_surface": 1,
+    "independent_parity_surface": 1,
+    "law_and_contract_surface": 1,
+    "mechanization_prep": 1,
+    "out_of_family_parity_surface": 1,
+    "proof_mapping_surface": 1,
+    "runtime_surface": 1,
+    "test_surface": 1,
+    "trust_kernel": 1,
+    "verifier_surface": 1
+  },
+  "auxiliary_entry_count": 3,
+  "canonical_entry_count": 9,
+  "canonical_release_entries": [
+    {
+      "authority_level": "trust_kernel",
+      "independent_surface": false,
+      "path": "src/bcf_trust_kernel",
+      "release_surface": "canonical",
+      "replaceable": false,
+      "required_for_runtime_trust": true,
+      "required_for_verdict_trust": true,
+      "role": "frozen minimal shared kernel"
+    },
+    {
+      "authority_level": "verifier_surface",
+      "independent_surface": false,
+      "path": "src/bcf_primitive_verifier",
+      "release_surface": "canonical",
+      "replaceable": false,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": true,
+      "role": "official bundle verifier surface"
+    },
+    {
+      "authority_level": "runtime_surface",
+      "independent_surface": false,
+      "path": "src/bcf_primitive",
+      "release_surface": "canonical",
+      "replaceable": false,
+      "required_for_runtime_trust": true,
+      "required_for_verdict_trust": false,
+      "role": "official compile/runtime/sealed execution surface"
+    },
+    {
+      "authority_level": "independent_parity_surface",
+      "independent_surface": true,
+      "path": "src/bcf_primitive_independent",
+      "release_surface": "canonical",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "clean-room parity implementation"
+    },
+    {
+      "authority_level": "out_of_family_parity_surface",
+      "independent_surface": true,
+      "path": "node_second_line",
+      "release_surface": "canonical",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "language-separated second line parity surface"
+    },
+    {
+      "authority_level": "externalized_parity_surface",
+      "independent_surface": true,
+      "path": "externalized_second_line",
+      "release_surface": "canonical",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "externalized Python parity/export surface"
+    },
+    {
+      "authority_level": "law_and_contract_surface",
+      "independent_surface": false,
+      "path": "SPEC",
+      "release_surface": "canonical",
+      "replaceable": false,
+      "required_for_runtime_trust": true,
+      "required_for_verdict_trust": true,
+      "role": "normative law, contracts, and closure matrices"
+    },
+    {
+      "authority_level": "gate_and_audit_surface",
+      "independent_surface": false,
+      "path": "tools",
+      "release_surface": "canonical",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "machine gates, harnesses, release audits"
+    },
+    {
+      "authority_level": "derived_release_artifacts",
+      "independent_surface": false,
+      "path": "dist",
+      "release_surface": "canonical",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "generated reports and export bundles"
+    }
+  ],
+  "non_canonical_entries": [
+    {
+      "authority_level": "mechanization_prep",
+      "independent_surface": false,
+      "path": "mechanized_kernel",
+      "release_surface": "auxiliary",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "mechanized proof preparation surface"
+    },
+    {
+      "authority_level": "proof_mapping_surface",
+      "independent_surface": false,
+      "path": "PROOFS",
+      "release_surface": "auxiliary",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "scope statements and theorem maps"
+    },
+    {
+      "authority_level": "test_surface",
+      "independent_surface": false,
+      "path": "tests",
+      "release_surface": "auxiliary",
+      "replaceable": true,
+      "required_for_runtime_trust": false,
+      "required_for_verdict_trust": false,
+      "role": "local regression and corpus execution checks"
+    }
+  ],
+  "overall_ok": true,
+  "pass_id": "INDEPENDENCE_CLOSURE_AND_TRUST_COMPRESSION_PASS"
+}

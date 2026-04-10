@@ -1,0 +1,92 @@
+{
+  "overall_ok": true,
+  "gate_name": "object_canonicalization_impossibility_saturation_gate",
+  "status_label": "executable_witness_strong_object_canonicalization_impossibility_saturation",
+  "families": {
+    "object_model": {
+      "overall_ok": true,
+      "checks": {
+        "verification_schema": {
+          "ok": true,
+          "error_count": 0,
+          "errors": []
+        },
+        "permit_schema": {
+          "ok": true,
+          "error_count": 0,
+          "errors": []
+        },
+        "refusal_schema": {
+          "ok": true,
+          "error_count": 0,
+          "errors": []
+        },
+        "replay_refusal_schema": {
+          "ok": true,
+          "error_count": 0,
+          "errors": []
+        },
+        "witness_checks": {
+          "verification_witness": {
+            "ok": true,
+            "error_count": 0,
+            "errors": []
+          },
+          "permit_witness": {
+            "ok": true,
+            "error_count": 0,
+            "errors": []
+          },
+          "refusal_witness": {
+            "ok": true,
+            "error_count": 0,
+            "errors": []
+          },
+          "replay_allow_witness": {
+            "ok": true,
+            "error_count": 0,
+            "errors": []
+          },
+          "replay_refusal_witness": {
+            "ok": true,
+            "error_count": 0,
+            "errors": []
+          }
+        },
+        "verification_negative_rejected": true,
+        "permit_missing_binding_rejected": true,
+        "refusal_missing_code_rejected": true
+      }
+    },
+    "canonicalization": {
+      "overall_ok": true,
+      "checks": {
+        "request_equal_pair": true,
+        "request_distinct_pair": true,
+        "action_equal_pair": true,
+        "action_distinct_pair": true,
+        "generic_object_equal_pair": true,
+        "generic_object_distinct_pair": true,
+        "generic_object_idempotence": true
+      }
+    },
+    "impossibility": {
+      "overall_ok": true,
+      "checks": {
+        "no_allow_without_verification": "REFUSAL",
+        "no_permit_on_refusal": false,
+        "verdict_universe_samples": {
+          "runtime_allow": "ALLOW",
+          "runtime_refusal": "REFUSAL",
+          "replay_allow": "ALLOW",
+          "replay_refusal": "REFUSAL",
+          "not_verified_replay": "REFUSAL",
+          "invalid_action": "REFUSAL"
+        },
+        "no_bypass_code": "REFUSE_NON_BYPASS_VIOLATION",
+        "invalid_action_descriptor_refusal": "REFUSAL"
+      }
+    }
+  },
+  "truth_boundary": "stronger executable witness saturation for implemented object-model, canonicalization, and impossibility surfaces; not theorem-prover-grade whole-family closure"
+}

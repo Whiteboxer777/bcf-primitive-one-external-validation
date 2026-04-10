@@ -1,0 +1,15 @@
+{
+  "family": "governance_invalidity",
+  "cases": [
+    {
+      "case_id": "governance_invalidity_authority_policy",
+      "mutation": "json_patch",
+      "target": "AUTHORITY_POLICY.json",
+      "patch": {
+        "minimum_signatures.CERTIFIED_FOR_PRODUCTION": 2
+      },
+      "expected_refusal_code": "REFUSE_GOVERNANCE_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "overall_ok": true,
+  "permit": {
+    "payload": {
+      "action_authority": {
+        "action_id": "schema-allow",
+        "action_kind": "emit",
+        "kind": "release_bound_action_descriptor"
+      },
+      "action_digest": "03ff26739f7e65b91fc0892a062564627de7967726e7f7c04a5552659d42a65a",
+      "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+      "decisive_rule_ids": [
+        "vendor_allowlist",
+        "eur_only",
+        "amount_cap"
+      ],
+      "permit": true,
+      "permit_binding": {
+        "action_digest": "03ff26739f7e65b91fc0892a062564627de7967726e7f7c04a5552659d42a65a",
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1"
+      },
+      "permit_type": "ACTION_DESCRIPTOR_RELEASE",
+      "primitive_identity": "BCF Primitive One",
+      "released_action": {
+        "action_id": "schema-allow",
+        "kind": "emit",
+        "payload": {}
+      },
+      "replay_binding": {
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1"
+      },
+      "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+      "verdict": "ALLOW",
+      "witness_certificate": {
+        "action_digest": "03ff26739f7e65b91fc0892a062564627de7967726e7f7c04a5552659d42a65a",
+        "binding_digest": "d4ff03cd47dd666b1e586aba8bb41fc6b26cb29bb32858e576e8c68ec3f43efd",
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "certificate_digest": "01bb54dc276121f9d0bd0302e04e9f89ea3d93e6da77d8e5df7fa8875b6db25f",
+        "certificate_scope": "kernel_evidence_carrying_v2",
+        "certificate_type": "permit_witness",
+        "certificate_version": "WITNESS_CERT_V2",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+        "source_digest": "2848222b8b58e0f252167dda694cdf72f81433d9257bff557f98fa0a31f2dc8b",
+        "source_kind": "permit",
+        "source_verdict": "ALLOW",
+        "witness_claims": {
+          "action_authority_kind": "release_bound_action_descriptor",
+          "binding_kind": "action_release",
+          "claim_set_digest": "155b647d1746e0f32b1605664372a151c9ab65645af16666028e3e9197472f10",
+          "decisive_rule_ids": [
+            "vendor_allowlist",
+            "eur_only",
+            "amount_cap"
+          ],
+          "decisive_rule_ids_digest": "9a7bbfabb39ba6bc89ba8de456e380878d14a0131277020bcc1b2d561473b44c",
+          "permit_binding_digest": "d4ff03cd47dd666b1e586aba8bb41fc6b26cb29bb32858e576e8c68ec3f43efd",
+          "witness_kind": "permit",
+          "witness_scope": "action_release"
+        }
+      }
+    },
+    "schema_validation": {
+      "error_count": 0,
+      "errors": [],
+      "ok": true
+    }
+  },
+  "refusal": {
+    "payload": {
+      "action_digest": "7456afdde3de16bca65e63d053b441a9c3e393d31a249012b71b34289d7e0b59",
+      "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+      "details": {
+        "decisive_rule_ids": [
+          "vendor_allowlist",
+          "eur_only",
+          "amount_cap"
+        ]
+      },
+      "layer": "action",
+      "permit": false,
+      "permit_binding": null,
+      "primitive_identity": "BCF Primitive One",
+      "refusal_class": "contract_satisfaction",
+      "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+      "replay_binding": {
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a"
+      },
+      "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a",
+      "verdict": "REFUSAL",
+      "witness_certificate": {
+        "action_digest": "7456afdde3de16bca65e63d053b441a9c3e393d31a249012b71b34289d7e0b59",
+        "binding_digest": "0252a88f1429608f865cb89b8cfa01b99d9ebdb28943133a68c80d22091ed9ee",
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "certificate_digest": "a4356fc51cc8684465c32d6f6bde0cd0a80664bebc5deb0923e85dd884db63af",
+        "certificate_scope": "kernel_evidence_carrying_v2",
+        "certificate_type": "refusal_witness",
+        "certificate_version": "WITNESS_CERT_V2",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "0a9981d784b6198507ef18a650d990f7faabf0bbff2846b12c71e9337661ff6a",
+        "source_digest": "2f860eb2e66fa487614ee7ce584c2bbb15e0c2297bd1b5299f8a4155d4f2c93d",
+        "source_kind": "refusal",
+        "source_verdict": "REFUSAL",
+        "witness_claims": {
+          "binding_kind": "action_release",
+          "claim_set_digest": "6d4524561221e72dc79c5cbfc0422872c95599089824d397db6a47a18591f890",
+          "details_digest": "cb59a039c738970b93d8800b178e75b307699e371f63f32a6a9e347f30bf5ffd",
+          "refusal_class": "contract_satisfaction",
+          "refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+          "refusal_reasons_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "witness_kind": "refusal",
+          "witness_scope": "action_refusal"
+        }
+      }
+    },
+    "schema_validation": {
+      "error_count": 0,
+      "errors": [],
+      "ok": true
+    }
+  },
+  "replay_refusal": {
+    "payload": {
+      "action_digest": null,
+      "bundle_digest": null,
+      "details": {
+        "source": "replay_verdict"
+      },
+      "layer": "bundle",
+      "overall_ok": false,
+      "permit": false,
+      "permit_binding": null,
+      "primitive_identity": "BCF Primitive One",
+      "refusal_class": "verification",
+      "refusal_code": "REFUSE_REQUIRED_FILES_MISSING",
+      "refusal_reasons": [
+        "REFUSE_REQUIRED_FILES_MISSING"
+      ],
+      "replay_binding": {
+        "bundle_digest": null,
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1"
+      },
+      "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+      "verdict": "REFUSAL",
+      "verification_result": "NOT_VERIFIED",
+      "witness_certificate": {
+        "action_digest": null,
+        "binding_digest": "e4c8417c89ef5117d1aa903ed6e2cf4aba7230a98abdb701eca06be37ca2fba6",
+        "bundle_digest": null,
+        "certificate_digest": "645392a0cdff1d12035779e1a3bd887ee1d3661ad31bab5c55d7b6ae0f62ea36",
+        "certificate_scope": "kernel_evidence_carrying_v2",
+        "certificate_type": "refusal_witness",
+        "certificate_version": "WITNESS_CERT_V2",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": "84bddcd09dc70d4b1af59bb656f62ccca297e4ec15ca77af59a022c8c032f6e1",
+        "source_digest": "51643f7a7dcd41dad9b68709b7bf7140c4165673927c2ec7f73147db0d693844",
+        "source_kind": "refusal",
+        "source_verdict": "REFUSAL",
+        "witness_claims": {
+          "binding_kind": "bundle_failure",
+          "claim_set_digest": "d6215cb55baf19d5a21549f754498eb94021a47a6c6ffe4050db75d4e38c4dca",
+          "details_digest": "9db2c3330a867ab92f55b0027f9d124a620957f289e31b09dcbe97070aa6e8d1",
+          "refusal_class": "verification",
+          "refusal_code": "REFUSE_REQUIRED_FILES_MISSING",
+          "refusal_reasons_digest": "137242fa9135aa8f68fe30767bd78aab5ba66a29f5ced06c319db275dd9ad54c",
+          "witness_kind": "refusal",
+          "witness_scope": "bundle_refusal"
+        }
+      }
+    },
+    "schema_validation": {
+      "error_count": 0,
+      "errors": [],
+      "ok": true
+    }
+  },
+  "verification": {
+    "payload": {
+      "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+      "checks": {
+        "certificates": true,
+        "claim_and_tcb": true,
+        "claim_matrix": true,
+        "compiled_backend_schema": true,
+        "compiler_products": true,
+        "contract": true,
+        "governance": true,
+        "manifest": true,
+        "permit_schema": true,
+        "refusal_schema": true,
+        "required_files": true,
+        "top_level": true,
+        "verdict_schema": true,
+        "verification_schema": true,
+        "witness_certificate_schema": true,
+        "witness_certificates": true,
+        "witness_replay": true
+      },
+      "details": {
+        "certificates": {
+          "details": {
+            "CONFORMANCE_CERT.json": {
+              "ok": true
+            },
+            "DECISIVE_CORE_CERT.json": {
+              "ok": true
+            },
+            "MINIMIZATION_CERT.json": {
+              "ok": true
+            },
+            "NORMALIZATION_CERT.json": {
+              "ok": true
+            },
+            "PROMOTION_CERT.json": {
+              "ok": true
+            },
+            "RELATION_CERT.json": {
+              "ok": true
+            },
+            "SAT_CERT.json": {
+              "ok": true
+            }
+          },
+          "ok": true
+        },
+        "claim_and_tcb": {
+          "claim_ok": true,
+          "ok": true,
+          "tcb_ok": true
+        },
+        "claim_matrix": {
+          "claim_count": 7,
+          "ok": true
+        },
+        "compiled_backend_schema": {
+          "ok": true,
+          "schema_name": "COMPILED_BACKEND.schema.json"
+        },
+        "compiler_products": {
+          "checks": {
+            "admission_normal_form": true,
+            "compiled_backend": true,
+            "decisive_core_sample": true,
+            "minimized_form": true,
+            "normal_form": true,
+            "relation_report": true,
+            "sat_report": true
+          },
+          "ok": true
+        },
+        "contract": {
+          "claimed_version": "BCF_PRIMITIVE_ONE_CONTRACT_V1",
+          "digest_ok": true,
+          "expected_version": "BCF_PRIMITIVE_ONE_CONTRACT_V1",
+          "ok": true
+        },
+        "contract_version": "BCF_PRIMITIVE_ONE_CONTRACT_V1",
+        "governance": {
+          "authority": {
+            "approved": [
+              {
+                "ok": true,
+                "reasons": [],
+                "scope": "production",
+                "signer_id": "root_prod"
+              }
+            ],
+            "minimum_required": 1,
+            "ok": true,
+            "rejected": []
+          },
+          "ok": true,
+          "promotion_ok": true,
+          "signature_checks": [
+            {
+              "ok": true,
+              "reason": "verified",
+              "scope": "production",
+              "signer_id": "root_prod"
+            }
+          ],
+          "supersession_ok": true
+        },
+        "manifest": {
+          "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+          "extra_manifest_entries": [],
+          "mismatches": [],
+          "ok": true
+        },
+        "permit_schema": {
+          "ok": true,
+          "schema_name": "PERMIT.schema.json"
+        },
+        "refusal_schema": {
+          "ok": true,
+          "schema_name": "REFUSAL.schema.json"
+        },
+        "required_files": {
+          "missing": [],
+          "ok": true
+        },
+        "top_level": {
+          "forbidden": [],
+          "ok": true,
+          "present": [
+            "ADMISSION_NORMAL_FORM.json",
+            "ADMISSION_NORMAL_FORM.schema.json",
+            "AUTHORITY_POLICY.json",
+            "BUILD_INFO.json",
+            "BUNDLE_CONTRACT.json",
+            "CLAIM.json",
+            "CLAIM_TEST_MATRIX.json",
+            "COMPILED_BACKEND.json",
+            "COMPILED_BACKEND.schema.json",
+            "CONFORMANCE_CERT.json",
+            "DECISIVE_CORE_CERT.json",
+            "DECISIVE_CORE_SAMPLE.json",
+            "MANIFEST.sha256.json",
+            "MINIMIZATION_CERT.json",
+            "MINIMIZED_FORM.json",
+            "NORMALIZATION_CERT.json",
+            "NORMAL_FORM.json",
+            "NO_BYPASS_WITNESS_CERT.json",
+            "PERMIT.schema.json",
+            "PERMIT_WITNESS_CERT.json",
+            "PROFILE_SOURCE.json",
+            "PROMOTION_CERT.json",
+            "PROMOTION_SIGNATURES.json",
+            "REFUSAL.schema.json",
+            "REFUSAL_WITNESS_CERT.json",
+            "RELATION_CERT.json",
+            "RELATION_REPORT.json",
+            "REPLAY_ALLOW_WITNESS_CERT.json",
+            "REPLAY_REFUSAL_WITNESS_CERT.json",
+            "REVOCATION_LIST.json",
+            "SAT_CERT.json",
+            "SAT_REPORT.json",
+            "SUPERSESSION_CHAIN.json",
+            "TCB_REPORT.json",
+            "TRUST_ROOTS.json",
+            "VERDICT.schema.json",
+            "VERIFICATION_RESULT.schema.json",
+            "VERIFICATION_WITNESS_CERT.json",
+            "WITNESS_CERTIFICATE.schema.json",
+            "WITNESS_SET.json"
+          ]
+        },
+        "verdict_schema": {
+          "ok": true,
+          "schema_name": "VERDICT.schema.json"
+        },
+        "witness_certificate_schema": {
+          "ok": true,
+          "schema_name": "WITNESS_CERTIFICATE.schema.json"
+        },
+        "witness_certificates": {
+          "details": {
+            "NO_BYPASS_WITNESS_CERT.json": {
+              "ok": true
+            },
+            "PERMIT_WITNESS_CERT.json": {
+              "ok": true
+            },
+            "REFUSAL_WITNESS_CERT.json": {
+              "ok": true
+            },
+            "REPLAY_ALLOW_WITNESS_CERT.json": {
+              "ok": true
+            },
+            "REPLAY_REFUSAL_WITNESS_CERT.json": {
+              "ok": true
+            },
+            "VERIFICATION_WITNESS_CERT.json": {
+              "ok": true
+            }
+          },
+          "ok": true
+        },
+        "witness_replay": {
+          "checked": 32,
+          "mismatches": [],
+          "ok": true
+        }
+      },
+      "overall_ok": true,
+      "primitive_identity": "BCF Primitive One",
+      "replay_binding": {
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": null
+      },
+      "verification_result": "VERIFIED",
+      "witness_certificate": {
+        "action_digest": null,
+        "binding_digest": "a24daa615a149a2dd88502e47d1b7991d05fa9aed3e92160fd9b61de265ea952",
+        "bundle_digest": "35fa718e57fb5bda7693fdfdaf474477f41caecba84d9b24d2ca08454c59ec06",
+        "certificate_digest": "cfb46964e9ded169d00143b4ec020537b6bce1c19ebf62261cc2767ebf80cf7e",
+        "certificate_scope": "kernel_evidence_carrying_v2",
+        "certificate_type": "verification_witness",
+        "certificate_version": "WITNESS_CERT_V2",
+        "primitive_identity": "BCF Primitive One",
+        "request_digest": null,
+        "source_digest": "b0ee389daa8c6c2e7e5e5c6003f24978c24bb4d374eaf09a0e261db407cdcf38",
+        "source_kind": "verification_result",
+        "source_verdict": "VERIFIED",
+        "witness_claims": {
+          "binding_kind": "bundle_only",
+          "check_truth_count": 17,
+          "checks_digest": "4cd1a3e750980edf653bc4b587170fe2f673a145763cd7d84a80d9731639a637",
+          "claim_set_digest": "9eb2fd834d43ff548d98771fb4f272c5bfabf8e7d25f865287efbd3b66040cd9",
+          "details_digest": "7d13d0dc128851524b960f49f5afa442bfa1e766b6d7b2198bc19d387a220417",
+          "verification_result": "VERIFIED",
+          "witness_kind": "verification",
+          "witness_scope": "bundle_verification"
+        }
+      }
+    },
+    "schema_validation": {
+      "error_count": 0,
+      "errors": [],
+      "ok": true
+    }
+  }
+}

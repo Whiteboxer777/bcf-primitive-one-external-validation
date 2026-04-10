@@ -1,0 +1,25 @@
+[
+  {
+    "case_id": "imp_no_allow_without_verification",
+    "expected_verdict": "REFUSAL",
+    "kind": "missing_required",
+    "remove": "TRUST_ROOTS.json"
+  },
+  {
+    "case_id": "imp_no_permit_on_deny",
+    "expected_permit": false,
+    "kind": "runtime_case",
+    "request": "deny_request.json"
+  },
+  {
+    "case_id": "IMP-S1",
+    "kind": "invalid_action_descriptor",
+    "artifact": "invalid_action_descriptor.json",
+    "expected": "refusal"
+  },
+  {
+    "case_id": "IMP-S2",
+    "kind": "no_third_verdict",
+    "expected": "allow_or_refusal_only"
+  }
+]

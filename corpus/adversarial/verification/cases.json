@@ -1,0 +1,103 @@
+{
+  "family": "verification",
+  "cases": [
+    {
+      "case_id": "VF-A1",
+      "kind": "bundle_mutation",
+      "mutation": "remove_file",
+      "target": "TRUST_ROOTS.json",
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_REQUIRED_FILES_MISSING",
+      "expected_refusal_class": "verification"
+    },
+    {
+      "case_id": "VF-A2",
+      "kind": "bundle_mutation",
+      "mutation": "add_file",
+      "target": "ILLEGAL_TOP_LEVEL.json",
+      "payload": {
+        "illegal": true
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_UNDECLARED_FILE",
+      "expected_refusal_class": "verification"
+    },
+    {
+      "case_id": "VF-A3",
+      "kind": "bundle_mutation",
+      "mutation": "json_patch",
+      "target": "BUNDLE_CONTRACT.json",
+      "patch": {
+        "semantics.official_runner": "not-sealed-runner"
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_CONTRACT_MISMATCH",
+      "expected_refusal_class": "verification"
+    },
+    {
+      "case_id": "VF-A4",
+      "kind": "bundle_mutation",
+      "mutation": "json_patch",
+      "target": "MANIFEST.sha256.json",
+      "patch": {
+        "PROFILE_SOURCE.json": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_MANIFEST_MISMATCH",
+      "expected_refusal_class": "verification"
+    },
+    {
+      "case_id": "VF-A5",
+      "kind": "bundle_mutation",
+      "mutation": "json_patch",
+      "target": "VERIFICATION_RESULT.schema.json",
+      "patch": {
+        "title": "Broken Verification Artifact"
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_VERIFICATION_SCHEMA_INVALID",
+      "expected_refusal_class": "verification",
+      "sync_manifest": true
+    },
+    {
+      "case_id": "VF-A6",
+      "kind": "bundle_mutation",
+      "mutation": "json_patch",
+      "target": "CLAIM_TEST_MATRIX.json",
+      "patch": {
+        "claims": []
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_CLAIM_MATRIX_INVALID",
+      "expected_refusal_class": "verification",
+      "sync_manifest": true
+    },
+    {
+      "case_id": "VF-A7",
+      "kind": "bundle_mutation",
+      "mutation": "json_patch",
+      "target": "WITNESS_SET.json",
+      "patch_index": 0,
+      "patch": {
+        "verdict": "ALLOW"
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_WITNESS_REPLAY_FAILED",
+      "expected_refusal_class": "verification",
+      "sync_manifest": true
+    },
+    {
+      "case_id": "VF-A8",
+      "kind": "bundle_mutation",
+      "mutation": "remove_and_add",
+      "remove": "TRUST_ROOTS.json",
+      "add": "ILLEGAL_TOP_LEVEL.json",
+      "payload": {
+        "illegal": true
+      },
+      "expected_verification": "NOT_VERIFIED",
+      "expected_refusal_code": "REFUSE_REQUIRED_FILES_MISSING",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

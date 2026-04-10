@@ -1,0 +1,25 @@
+{
+  "overall_ok": true,
+  "repo_export_zip": "dist/NODE_SECOND_LINE_REPO_EXPORT.zip",
+  "repo_export_root": "repo_exports/node_second_line_repo",
+  "prepared_items": [
+    "separate repo root layout",
+    "package-lock.json",
+    "local self-check script",
+    "local theorem discharge gate script",
+    "externalization manifest script",
+    "GitHub Actions parity gate workflow template",
+    "cross-repo parity gate report",
+    "sample bundle and sample requests/actions"
+  ],
+  "reports": [
+    "repo_exports/node_second_line_repo/reports/node_self_check_report.json",
+    "repo_exports/node_second_line_repo/reports/node_theorem_discharge_report.json",
+    "repo_exports/node_second_line_repo/reports/externalization_manifest.json",
+    "REPORTS/cross_repo_parity_gate_report.json"
+  ],
+  "limits": [
+    "prepared as separate-repo export inside the main release, not yet an actually separate hosted repository",
+    "theorem discharge remains executable-witness grade, not theorem-prover discharge"
+  ]
+}

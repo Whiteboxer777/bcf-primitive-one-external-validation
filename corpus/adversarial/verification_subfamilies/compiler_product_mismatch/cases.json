@@ -1,0 +1,15 @@
+{
+  "family": "compiler_product_mismatch",
+  "cases": [
+    {
+      "case_id": "compiler_product_mismatch_normal_form",
+      "mutation": "json_patch",
+      "target": "NORMAL_FORM.json",
+      "patch": {
+        "kind": "OR"
+      },
+      "expected_refusal_code": "REFUSE_COMPILER_PRODUCT_MISMATCH",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

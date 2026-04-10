@@ -1,0 +1,411 @@
+{
+  "families": {
+    "certificate_invalidity": {
+      "cases": {
+        "certificate_invalidity_promotion_digest": {
+          "expected": {
+            "case_id": "certificate_invalidity_promotion_digest",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_CERTIFICATE_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "claims.promotion_verdict": "BROKEN_CERTIFIED_FOR_PRODUCTION"
+            },
+            "target": "PROMOTION_CERT.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_CERTIFICATE_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "2b5a3ba0902591764914de8d7089c93ed432f3078788014aded06b61cf887f43",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_CERTIFICATE_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "claim_matrix_tamper": {
+      "cases": {
+        "claim_matrix_tamper_drop_tests": {
+          "expected": {
+            "case_id": "claim_matrix_tamper_drop_tests",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_CLAIM_MATRIX_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "claims.0": {
+                "claim_id": "BROKEN_C1"
+              }
+            },
+            "patch_index": null,
+            "target": "CLAIM_TEST_MATRIX.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "e342272bd361a52ce1adef85e40a18018e984836a6a11492a41ec75f7f1a9cf8",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_CLAIM_MATRIX_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "e342272bd361a52ce1adef85e40a18018e984836a6a11492a41ec75f7f1a9cf8",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_CLAIM_MATRIX_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "claim_tcb_tamper": {
+      "cases": {
+        "claim_tcb_tamper_flags": {
+          "expected": {
+            "case_id": "claim_tcb_tamper_flags",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_CLAIM_TCB_INVALID",
+            "mutation": "claim_tcb_tamper"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "46bb07706fa9987f4f170bbd4209b5d3d9d31d05a777a7ffa26b667e0bfb653a",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_CLAIM_TCB_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "46bb07706fa9987f4f170bbd4209b5d3d9d31d05a777a7ffa26b667e0bfb653a",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_CLAIM_TCB_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "compiler_product_mismatch": {
+      "cases": {
+        "compiler_product_mismatch_normal_form": {
+          "expected": {
+            "case_id": "compiler_product_mismatch_normal_form",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_COMPILER_PRODUCT_MISMATCH",
+            "mutation": "json_patch",
+            "patch": {
+              "kind": "OR"
+            },
+            "target": "NORMAL_FORM.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "9a9c836f308900f7115472859cfbdf08f8d42f01c84cca9617463d60fd3af7ae",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_COMPILER_PRODUCT_MISMATCH",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "9a9c836f308900f7115472859cfbdf08f8d42f01c84cca9617463d60fd3af7ae",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_COMPILER_PRODUCT_MISMATCH",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "governance_invalidity": {
+      "cases": {
+        "governance_invalidity_authority_policy": {
+          "expected": {
+            "case_id": "governance_invalidity_authority_policy",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_GOVERNANCE_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "minimum_signatures.CERTIFIED_FOR_PRODUCTION": 2
+            },
+            "target": "AUTHORITY_POLICY.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "629d40606912d7a8ffd30b6e7191b24680185040d511b5dbd136b802abf7982d",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_GOVERNANCE_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "629d40606912d7a8ffd30b6e7191b24680185040d511b5dbd136b802abf7982d",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_GOVERNANCE_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "permit_schema_tamper": {
+      "cases": {
+        "permit_schema_tamper_kind": {
+          "expected": {
+            "case_id": "permit_schema_tamper_kind",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_PERMIT_SCHEMA_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "properties.action_authority.properties.kind.enum": [
+                "broken_kind"
+              ]
+            },
+            "target": "PERMIT.schema.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "812a9cea0ef5ac6ec3a4356297893d1396a43fd7da666201aba71cd5c19a5986",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_PERMIT_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "812a9cea0ef5ac6ec3a4356297893d1396a43fd7da666201aba71cd5c19a5986",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_PERMIT_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "refusal_schema_tamper": {
+      "cases": {
+        "refusal_schema_tamper_title": {
+          "expected": {
+            "case_id": "refusal_schema_tamper_title",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_REFUSAL_SCHEMA_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "title": "Broken Refusal Event"
+            },
+            "target": "REFUSAL.schema.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "fd5e2617e3431e1a6b42492dc1e8fc486f8d07cd1d75486612edcf7ca4ad8fd1",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_REFUSAL_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "fd5e2617e3431e1a6b42492dc1e8fc486f8d07cd1d75486612edcf7ca4ad8fd1",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_REFUSAL_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "verdict_schema_tamper": {
+      "cases": {
+        "verdict_schema_tamper_enum": {
+          "expected": {
+            "case_id": "verdict_schema_tamper_enum",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_VERDICT_SCHEMA_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "properties.verdict.enum": [
+                "ALLOW"
+              ]
+            },
+            "target": "VERDICT.schema.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "831249e66e1575ea084b768e0fc7c56ef262ebfe223e81f43eb9712088408e6a",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_VERDICT_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "831249e66e1575ea084b768e0fc7c56ef262ebfe223e81f43eb9712088408e6a",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_VERDICT_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "verification_schema_tamper": {
+      "cases": {
+        "verification_schema_tamper_title": {
+          "expected": {
+            "case_id": "verification_schema_tamper_title",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_VERIFICATION_SCHEMA_INVALID",
+            "mutation": "json_patch",
+            "patch": {
+              "title": "Broken Verification Result"
+            },
+            "target": "VERIFICATION_RESULT.schema.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "c569b7b3d06d8fc8087f581d45e3c18a5d1939ad1b84a160bec9ad21df4eb7f6",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_VERIFICATION_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "c569b7b3d06d8fc8087f581d45e3c18a5d1939ad1b84a160bec9ad21df4eb7f6",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_VERIFICATION_SCHEMA_INVALID",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    },
+    "witness_replay_tamper": {
+      "cases": {
+        "witness_replay_tamper_verdict": {
+          "expected": {
+            "case_id": "witness_replay_tamper_verdict",
+            "expected_refusal_class": "verification",
+            "expected_refusal_code": "REFUSE_WITNESS_REPLAY_FAILED",
+            "mutation": "json_patch",
+            "patch": {
+              "verdict": "ALLOW"
+            },
+            "patch_index": 0,
+            "target": "WITNESS_SET.json"
+          },
+          "node_second_line": {
+            "authority_kind": null,
+            "bundle_digest": "ce9b80ec22aeec9db8d6879ac85c623b93eadd2da5cba403965601b4240e728d",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_WITNESS_REPLAY_FAILED",
+            "request_digest": null,
+            "schema_ok": true
+          },
+          "ok": true,
+          "primary": {
+            "authority_kind": null,
+            "bundle_digest": "ce9b80ec22aeec9db8d6879ac85c623b93eadd2da5cba403965601b4240e728d",
+            "decision_class": "NOT_VERIFIED",
+            "kind": "verification",
+            "primitive_identity": "BCF Primitive One",
+            "refusal_class": "verification",
+            "refusal_code": "REFUSE_WITNESS_REPLAY_FAILED",
+            "request_digest": null,
+            "schema_ok": true
+          }
+        }
+      },
+      "overall_ok": true
+    }
+  },
+  "node_runtime_source": "pre_generated_cache",
+  "overall_ok": true,
+  "target_name": "node_out_of_family_verification_subfamily_parity"
+}

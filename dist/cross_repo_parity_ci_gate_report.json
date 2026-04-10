@@ -1,0 +1,40 @@
+{
+  "overall_ok": true,
+  "contract": "CI/CROSS_REPO_PARITY_CONTRACT.json",
+  "contract_scope": "export_prepared_cross_repo_ci_contract",
+  "truth_boundary": {
+    "what_is_verified": "main-line ingestion of exported Node repo reports plus presence of exported CI workflow templates and contract-required parity checks",
+    "what_is_not_claimed": [
+      "externally hosted repository execution",
+      "independent third-party CI governance",
+      "remote artifact provenance beyond this release artifact"
+    ]
+  },
+  "status_label": "export_prepared_machine_gated_parity_readiness",
+  "workflow_status": {
+    "repo_exports/node_second_line_repo/.github/workflows/node-second-line-parity-gate.yml": true,
+    "repo_exports/node_second_line_repo/.github/workflows/node-second-line-cross-repo-artifact.yml": true
+  },
+  "inputs": {
+    "REPORTS/node_out_of_family_parity_report.json": {
+      "exists": true
+    },
+    "REPORTS/node_verification_subfamily_parity_report.json": {
+      "exists": true
+    },
+    "repo_exports/node_second_line_repo/reports/node_self_check_report.json": {
+      "exists": true
+    },
+    "repo_exports/node_second_line_repo/reports/node_theorem_discharge_report.json": {
+      "exists": true
+    }
+  },
+  "checks": {
+    "main_node_parity_ok": true,
+    "main_node_subfamily_ok": true,
+    "repo_self_check_ok": true,
+    "repo_discharge_ok": true,
+    "primitive_identity_match": true
+  },
+  "issues": []
+}

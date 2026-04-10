@@ -1,0 +1,52 @@
+{
+  "family": "admission",
+  "cases": [
+    {
+      "case_id": "AD-A1",
+      "kind": "runtime_request",
+      "request_file": "allow_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "ALLOW"
+    },
+    {
+      "case_id": "AD-A2",
+      "kind": "runtime_request",
+      "request_file": "deny_amount_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_VERDICT_NOT_ALLOW"
+    },
+    {
+      "case_id": "AD-A3",
+      "kind": "runtime_request",
+      "request_file": "deny_vendor_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_VERDICT_NOT_ALLOW"
+    },
+    {
+      "case_id": "AD-A4",
+      "kind": "runtime_request",
+      "request_file": "schema_invalid_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_SCHEMA_INVALID"
+    },
+    {
+      "case_id": "AD-A5",
+      "kind": "runtime_request",
+      "request_file": "oversize_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_REQUEST_OVERSIZE"
+    },
+    {
+      "case_id": "AD-A6",
+      "kind": "runtime_request",
+      "request_file": "allow_request.json",
+      "action_file": "invalid_action.json",
+      "expected_verdict": "REFUSAL",
+      "expected_refusal_code": "REFUSE_ACTION_DESCRIPTOR_INVALID"
+    }
+  ]
+}

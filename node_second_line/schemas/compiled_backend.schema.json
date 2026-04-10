@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BCF Primitive One Compiled Backend",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "source_kind",
+    "anf_digest",
+    "atom_index",
+    "clauses",
+    "literal_index",
+    "evaluation_order",
+    "compilation_trace",
+    "backend_digest"
+  ],
+  "properties": {
+    "profile_id": {"type": "string"},
+    "source_kind": {"const": "indexed_dnf_clause_backend_v1"},
+    "anf_digest": {"type": "string"},
+    "atom_index": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["atom_id", "atom_kind", "atom", "atom_digest"],
+        "properties": {
+          "atom_id": {"type": "string"},
+          "atom_kind": {"type": "string"},
+          "rule_id": {"type": ["string", "null"]},
+          "atom": {"type": "object"},
+          "atom_digest": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "clauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["clause_id", "positive_atoms", "negative_atoms", "literal_count"],
+        "properties": {
+          "clause_id": {"type": "string"},
+          "positive_atoms": {"type": "array", "items": {"type": "string"}},
+          "negative_atoms": {"type": "array", "items": {"type": "string"}},
+          "literal_count": {"type": "integer", "minimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
+    "literal_index": {
+      "type": "object",
+      "additionalProperties": {"type": "array", "items": {"type": "string"}}
+    },
+    "evaluation_order": {"type": "array", "items": {"type": "string"}},
+    "compilation_trace": {"type": "array", "items": {"type": "string"}},
+    "backend_digest": {"type": "string"}
+  },
+  "additionalProperties": false
+}

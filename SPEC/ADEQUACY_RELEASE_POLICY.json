@@ -1,0 +1,49 @@
+{
+  "policy_version": "adequacy_release_policy_v1",
+  "closed_status_vocabulary": [
+    "FULL",
+    "PARTIAL",
+    "LAW_ONLY",
+    "MISSING",
+    "OUT_OF_SCOPE"
+  ],
+  "release_blocking_prefixes": [
+    "IDX-",
+    "PL-",
+    "AS-",
+    "RA-",
+    "PA-",
+    "NB-",
+    "THF-",
+    "THM-",
+    "EXT-",
+    "TD-",
+    "ANF-",
+    "CB-",
+    "WC-",
+    "OCI-"
+  ],
+  "allowed_partial_ids": [
+    "EQ-07"
+  ],
+  "required_reports": [
+    "dist/schema_validation_report.json",
+    "dist/equivalence_report.json",
+    "dist/theorem_family_corpus_report.json",
+    "dist/adversarial_closure_report.json",
+    "dist/verification_subfamily_completion_report.json",
+    "dist/independent_second_implementation_parity_report.json",
+    "dist/externalized_second_line_parity_report.json",
+    "dist/node_out_of_family_parity_report.json",
+    "dist/node_verification_subfamily_parity_report.json",
+    "dist/cross_repo_parity_gate_report.json",
+    "dist/theorem_discharge_ledger.json",
+    "dist/externalization_preparation_report.json",
+    "dist/admission_normal_form_gate_report.json",
+    "dist/compiled_backend_gate_report.json",
+    "dist/witness_certificate_gate_report.json",
+    "dist/object_canonicalization_impossibility_saturation_report.json",
+    "dist/witness_certificate_expansion_report.json"
+  ],
+  "allowed_partial_rows": []
+}

@@ -1,0 +1,13 @@
+{
+  "primitive_identity": "BCF Primitive One",
+  "closure_surface": "external_truth_closure",
+  "required_outputs": [
+    "dist/EXTERNAL_TRUTH_CHAIN.json",
+    "dist/EXTERNAL_TRUTH_VERDICT.json",
+    "dist/external_digest_reconciliation_report.json"
+  ],
+  "required_tools": [
+    "tools/external_truth_closure_gate.py",
+    "tools/external_digest_reconciliation_gate.py"
+  ]
+}

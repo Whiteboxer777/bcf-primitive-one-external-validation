@@ -1,0 +1,6 @@
+{
+  "role": "permit_binding",
+  "request_digest": "abc",
+  "bundle_digest": "def",
+  "primitive_identity": "BCF Primitive One"
+}

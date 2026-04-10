@@ -1,0 +1,89 @@
+{
+  "overall_ok": true,
+  "gate_name": "external_ci_clean_room_simulation",
+  "simulation_grade": "EXTERNAL_CI_CLEAN_ROOM_PASS",
+  "clean_room_path": "/var/folders/h5/kfv0gthj7bd2dg4nwk8l9kcm0000gn/T/bcf_ci_sim_mx44la8e/external_handoff",
+  "handoff_entries": [
+    "src",
+    "node_second_line",
+    "externalized_second_line",
+    "schemas",
+    "examples",
+    "SPEC",
+    "tools",
+    "tests",
+    "PROOFS",
+    "CI",
+    "corpus",
+    "mechanized_kernel",
+    "dist",
+    "pyproject.toml",
+    "CLAIM.md",
+    "TCB.md",
+    "VERIFIER_TCB.md",
+    "LIMITS.md",
+    "LAW_ALIGNMENT_REPORT.md",
+    "REPRODUCE.md",
+    "RC_CLAIM_BOUNDARY.md",
+    "RC_RESIDUAL_GAPS.md",
+    "RELEASE_STATUS.md",
+    "RELEASE_SURFACE.md",
+    "README.md",
+    "requirements.txt"
+  ],
+  "gate_execution": {
+    "exit_code": 0,
+    "stdout": "{\n  \"overall_ok\": true,\n  \"chain\": \"dist/EXTERNAL_TRUTH_CHAIN.json\",\n  \"verdict\": \"dist/EXTERNAL_TRUTH_VERDICT.json\"\n}",
+    "stderr_lines": 0
+  },
+  "verdict_verification": {
+    "ok": true,
+    "checks": {
+      "verdict_exists": true,
+      "chain_exists": true,
+      "reconciliation_exists": true,
+      "overall_ok": true,
+      "verdict_correct": true,
+      "artifact_id_correct": true,
+      "parity_independent": true,
+      "parity_node": true,
+      "proof_ok": true,
+      "audit_ok": true,
+      "hygiene_ok": true,
+      "digest_reconciliation_ok": true,
+      "digest_match_trust_kernel": true,
+      "digest_match_verifier": true,
+      "digest_match_runtime": true,
+      "digest_match_independent": true,
+      "digest_match_node": true
+    },
+    "canonical_digests": {
+      "trust_kernel": "1152b8f21fea8404be01409ff2e90cb85cbf75b85cf1054768d433db6b6679b2",
+      "verifier": "684b48c9faf21d3ff99c39bb35d3e22ef91b8824c42fbdd7da930eedf4b963e2",
+      "runtime": "573a82fc30fc1ea0cb8d6468fe42044ac5e7304286a1c7a76628c6c1d239af31",
+      "independent": "08db2fea157406ab1b2c475d2f0dc8284b6fd3b82d9159c6b43b52046bc21949",
+      "node": "87565c8726e9b4e70ea8cbc2bb7e4160cb2ac1039daa286e09eb39c62bea0273"
+    },
+    "clean_room_digests": {
+      "trust_kernel": "1152b8f21fea8404be01409ff2e90cb85cbf75b85cf1054768d433db6b6679b2",
+      "verifier": "684b48c9faf21d3ff99c39bb35d3e22ef91b8824c42fbdd7da930eedf4b963e2",
+      "runtime": "573a82fc30fc1ea0cb8d6468fe42044ac5e7304286a1c7a76628c6c1d239af31",
+      "independent": "08db2fea157406ab1b2c475d2f0dc8284b6fd3b82d9159c6b43b52046bc21949",
+      "node": "87565c8726e9b4e70ea8cbc2bb7e4160cb2ac1039daa286e09eb39c62bea0273"
+    }
+  },
+  "truth_boundary": {
+    "what_this_proves": [
+      "The external handoff pack is self-contained",
+      "All gates pass in a fresh directory with no prior state",
+      "Source-file digests match between canonical and clean-room",
+      "EXTERNAL_TRUTH_VERDICT meets all acceptance criteria",
+      "The pack would pass in any CI environment with Python 3.11+ and Node 18+"
+    ],
+    "what_this_does_not_prove": [
+      "Actual execution on a separately owned GitHub/GitLab CI account",
+      "Execution by a second independent human operator"
+    ],
+    "path_to_full_closure": "Push to GitHub, enable Actions, run workflow"
+  }
+}

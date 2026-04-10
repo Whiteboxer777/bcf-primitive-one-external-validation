@@ -1,0 +1,26 @@
+{
+  "gates": {
+    "artifact_hygiene": true,
+    "canonical_release_surface": true,
+    "duplicate_surface": true,
+    "import_independence": true
+  },
+  "independent_second_semantic_line_present": true,
+  "independent_second_semantic_modules": [
+    "src/bcf_primitive_independent/semantic_core.py",
+    "src/bcf_primitive_independent/admission_normal_form.py",
+    "src/bcf_primitive_independent/compiled_backend.py",
+    "src/bcf_primitive_independent/strict_json.py"
+  ],
+  "overall_ok": true,
+  "pass_id": "TRUE_MINIMAL_TRUST_KERNEL_AND_REAL_SECOND_IMPLEMENTATION_PASS",
+  "primary_anf_backend_facade_only": true,
+  "primary_verifier_facade_only": true,
+  "residual_gaps": [
+    "Whole-family mechanized closure remains partial rather than theorem-prover complete.",
+    "External separate-repo rerun closure is still not embedded as hard evidence in this pass.",
+    "OS/hardware non-bypass remains out of scope."
+  ],
+  "trust_kernel_authoritative": true,
+  "verifier_anf_backend_facade_only": true
+}

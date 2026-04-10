@@ -1,0 +1,53 @@
+[
+  {
+    "case_id": "om_verification_structured_object",
+    "kind": "verification_output_has_required_keys",
+    "required": [
+      "primitive_identity",
+      "verification_result",
+      "checks",
+      "details",
+      "replay_binding"
+    ]
+  },
+  {
+    "case_id": "om_refusal_structured_object",
+    "kind": "refusal_output_has_required_keys",
+    "required": [
+      "primitive_identity",
+      "verdict",
+      "refusal_code",
+      "refusal_class",
+      "replay_binding"
+    ]
+  },
+  {
+    "case_id": "om_permit_structured_object",
+    "kind": "permit_output_has_required_keys",
+    "required": [
+      "primitive_identity",
+      "verdict",
+      "permit_binding",
+      "action_authority",
+      "replay_binding"
+    ]
+  },
+  {
+    "case_id": "OM-S1",
+    "kind": "schema_negative",
+    "artifact": "verification_result_minimal_invalid.json",
+    "expected": "schema_invalid"
+  },
+  {
+    "case_id": "OM-S2",
+    "kind": "schema_negative",
+    "artifact": "permit_missing_binding_invalid.json",
+    "expected": "schema_invalid"
+  },
+  {
+    "case_id": "OM-S3",
+    "kind": "schema_negative",
+    "artifact": "refusal_missing_code_invalid.json",
+    "expected": "schema_invalid"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "family": "refusal_precedence",
+  "cases": [
+    {
+      "case_id": "RA-A1",
+      "kind": "bundle_mutation",
+      "mutation": "remove_and_add",
+      "remove": "TRUST_ROOTS.json",
+      "add": "ILLEGAL_TOP_LEVEL.json",
+      "payload": {
+        "illegal": true
+      },
+      "expected_refusal_code": "REFUSE_REQUIRED_FILES_MISSING",
+      "expected_refusal_class": "verification"
+    },
+    {
+      "case_id": "RA-A2",
+      "kind": "bundle_mutation",
+      "mutation": "contract_and_manifest",
+      "expected_refusal_code": "REFUSE_CONTRACT_MISMATCH",
+      "expected_refusal_class": "verification"
+    },
+    {
+      "case_id": "RA-A3",
+      "kind": "runtime_request",
+      "request_file": "deny_amount_request.json",
+      "action_file": "valid_action.json",
+      "expected_refusal_code": "REFUSE_VERDICT_NOT_ALLOW",
+      "expected_refusal_class": "contract_satisfaction"
+    }
+  ]
+}

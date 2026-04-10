@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "action_authority": {
+      "additionalProperties": true,
+      "properties": {
+        "action_id": {
+          "type": "string"
+        },
+        "action_kind": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "release_bound_action_descriptor"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "action_id",
+        "action_kind"
+      ],
+      "type": "object"
+    },
+    "action_digest": {
+      "type": "string"
+    },
+    "bundle_digest": {
+      "type": "string"
+    },
+    "decisive_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "permit": {
+      "const": true,
+      "type": "boolean"
+    },
+    "permit_binding": {
+      "additionalProperties": true,
+      "properties": {
+        "action_digest": {
+          "type": "string"
+        },
+        "bundle_digest": {
+          "type": "string"
+        },
+        "primitive_identity": {
+          "const": "BCF Primitive One",
+          "type": "string"
+        },
+        "request_digest": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "primitive_identity",
+        "bundle_digest",
+        "request_digest",
+        "action_digest"
+      ],
+      "type": "object"
+    },
+    "permit_type": {
+      "enum": [
+        "ACTION_DESCRIPTOR_RELEASE"
+      ]
+    },
+    "primitive_identity": {
+      "const": "BCF Primitive One",
+      "type": "string"
+    },
+    "released_action": {
+      "type": "object"
+    },
+    "replay_binding": {
+      "additionalProperties": true,
+      "properties": {
+        "bundle_digest": {
+          "type": "string"
+        },
+        "primitive_identity": {
+          "const": "BCF Primitive One",
+          "type": "string"
+        },
+        "request_digest": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "primitive_identity",
+        "bundle_digest",
+        "request_digest"
+      ],
+      "type": "object"
+    },
+    "request_digest": {
+      "type": "string"
+    },
+    "verdict": {
+      "enum": [
+        "ALLOW"
+      ]
+    }
+  },
+  "required": [
+    "primitive_identity",
+    "permit",
+    "verdict",
+    "permit_type",
+    "permit_binding",
+    "action_authority",
+    "replay_binding"
+  ],
+  "title": "BCF Permit Event",
+  "type": "object"
+}

@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "case_id": "fc_bundle_failure_refuses",
+      "expected_code": "REFUSE_REQUIRED_FILES_MISSING",
+      "kind": "missing_required",
+      "remove": "TRUST_ROOTS.json"
+    },
+    {
+      "case_id": "fc_request_oversize_refuses",
+      "expected_code": "REFUSE_REQUEST_OVERSIZE",
+      "kind": "oversize_request"
+    },
+    {
+      "case_id": "fc_schema_invalid_refuses",
+      "expected_code": "REFUSE_SCHEMA_INVALID",
+      "kind": "invalid_request"
+    }
+  ],
+  "family": "fail_closed"
+}

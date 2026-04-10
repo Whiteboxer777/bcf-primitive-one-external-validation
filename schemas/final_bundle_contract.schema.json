@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "contract_version",
+    "manifest_name",
+    "required_files",
+    "allowed_top_level_files",
+    "contract_digest"
+  ],
+  "title": "BCF Final Bundle Contract Envelope",
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "family": "permit_schema_tamper",
+  "cases": [
+    {
+      "case_id": "permit_schema_tamper_kind",
+      "mutation": "json_patch",
+      "target": "PERMIT.schema.json",
+      "patch": {
+        "properties.action_authority.properties.kind.enum": [
+          "broken_kind"
+        ]
+      },
+      "expected_refusal_code": "REFUSE_PERMIT_SCHEMA_INVALID",
+      "expected_refusal_class": "verification"
+    }
+  ]
+}

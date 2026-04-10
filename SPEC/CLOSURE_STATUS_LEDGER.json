@@ -1,0 +1,114 @@
+{
+  "items": [
+    {
+      "blocking_gap_for_next_status": "full machine-checked closure not claimed",
+      "evidence": [
+        "SPEC/OBJECT_MODEL.md",
+        "tests/test_object_canonicalization_impossibility_saturation.py"
+      ],
+      "family": "object_model",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "no theorem-prover final closure",
+      "evidence": [
+        "SPEC/CANONICALIZATION_LAW.md",
+        "dist/object_canonicalization_impossibility_saturation_report.json"
+      ],
+      "family": "canonicalization",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "whole-family semantic closure still partial",
+      "evidence": [
+        "SPEC/PRIMITIVE_LAW.md",
+        "tests/test_admission_normal_form.py"
+      ],
+      "family": "admission",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "formal calculus closure not claimed",
+      "evidence": [
+        "SPEC/REFUSAL_ALGEBRA.md",
+        "schemas/refusal.schema.json"
+      ],
+      "family": "refusal",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "formal calculus closure not claimed",
+      "evidence": [
+        "SPEC/PERMIT_ALGEBRA.md",
+        "schemas/permit.schema.json"
+      ],
+      "family": "permit",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "external independent CI attestation still pending",
+      "evidence": [
+        "dist/verification_subfamily_completion_report.json",
+        "dist/import_independence_report.json"
+      ],
+      "family": "verification",
+      "status": "independent_parity"
+    },
+    {
+      "blocking_gap_for_next_status": "proof-certificate closure not claimed",
+      "evidence": [
+        "dist/witness_certificate_expansion_report.json",
+        "schemas/witness_certificate.schema.json"
+      ],
+      "family": "witness",
+      "status": "independent_parity"
+    },
+    {
+      "blocking_gap_for_next_status": "scalable backend completeness not claimed",
+      "evidence": [
+        "dist/compiled_backend_gate_report.json",
+        "schemas/compiled_backend.schema.json"
+      ],
+      "family": "compiled_backend",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "whole-family IR closure not claimed",
+      "evidence": [
+        "dist/admission_normal_form_gate_report.json",
+        "SPEC/ADMISSION_NORMAL_FORM.md"
+      ],
+      "family": "admission_normal_form",
+      "status": "executable_witness"
+    },
+    {
+      "blocking_gap_for_next_status": "whole-family machine-checked discharge absent",
+      "evidence": [
+        "PROOFS/MECHANIZED_KERNEL_PREP_REPORT.md",
+        "mechanized_kernel/semantic_core.py"
+      ],
+      "family": "mechanized_kernel",
+      "status": "mechanized_partial"
+    },
+    {
+      "blocking_gap_for_next_status": "external separate-repo parity execution pending",
+      "evidence": [
+        "dist/import_independence_report.json",
+        "dist/independent_second_implementation_parity_report.json"
+      ],
+      "family": "python_independence",
+      "status": "independent_parity"
+    },
+    {
+      "blocking_gap_for_next_status": "external third-party rerun pending",
+      "evidence": [
+        "dist/node_out_of_family_parity_report.json",
+        "node_second_line/src/index.mjs"
+      ],
+      "family": "node_parity",
+      "status": "independent_parity"
+    }
+  ],
+  "title": "Closure Status Ledger",
+  "version": "INDEPENDENCE_CLOSURE_AND_TRUST_COMPRESSION_PASS"
+}

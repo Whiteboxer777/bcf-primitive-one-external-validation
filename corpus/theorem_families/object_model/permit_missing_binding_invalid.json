@@ -1,0 +1,16 @@
+{
+  "primitive_identity": "BCF Primitive One",
+  "bundle_digest": "x",
+  "request_digest": "y",
+  "action_digest": "z",
+  "permit": true,
+  "verdict": "ALLOW",
+  "permit_type": "release",
+  "released_action": {},
+  "action_authority": {
+    "kind": "release_bound_action_descriptor"
+  },
+  "replay_binding": {
+    "primitive_identity": "BCF Primitive One"
+  }
+}

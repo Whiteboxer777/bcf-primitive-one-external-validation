@@ -1,0 +1,59 @@
+name: BCF Primitive One — External Truth Closure
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  external-truth-closure:
+    name: External Truth Closure Gate
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run external truth closure gate
+        env:
+          PYTHONPATH: src
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python tools/external_truth_closure_gate.py
+
+      - name: Verify EXTERNAL_TRUTH_VERDICT (acceptance criteria + digest check)
+        run: python EXTERNAL_AUDIT_PACK/verify_external_verdict.py
+
+      - name: Upload EXTERNAL_TRUTH_VERDICT
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-truth-verdict-${{ github.sha }}
+          path: |
+            dist/EXTERNAL_TRUTH_VERDICT.json
+            dist/EXTERNAL_TRUTH_CHAIN.json
+            dist/external_digest_reconciliation_report.json
+          retention-days: 90
+
+      - name: Upload full dist
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-truth-dist-${{ github.sha }}
+          path: dist/
+          retention-days: 30

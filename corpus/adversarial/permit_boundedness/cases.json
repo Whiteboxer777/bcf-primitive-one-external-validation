@@ -1,0 +1,31 @@
+{
+  "family": "permit_boundedness",
+  "cases": [
+    {
+      "case_id": "PA-A1",
+      "kind": "runtime_request",
+      "request_file": "allow_request.json",
+      "action_file": "valid_action.json",
+      "expected_verdict": "ALLOW",
+      "expected_authority_kind": "release_bound_action_descriptor"
+    },
+    {
+      "case_id": "PA-A2",
+      "kind": "runtime_request",
+      "request_file": "allow_request.json",
+      "action_file": "alt_action.json",
+      "expected_verdict": "ALLOW",
+      "expected_authority_kind": "release_bound_action_descriptor"
+    },
+    {
+      "case_id": "PA-A3",
+      "kind": "permit_scope_probe",
+      "request_file": "allow_request.json",
+      "action_file": "valid_action.json",
+      "forbid_extra_authority_keys": [
+        "scope_expansion",
+        "wildcard"
+      ]
+    }
+  ]
+}

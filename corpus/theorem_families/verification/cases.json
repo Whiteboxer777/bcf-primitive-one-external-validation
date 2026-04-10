@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case_id": "vf_valid_bundle_verified",
+      "expected": "VERIFIED",
+      "kind": "valid_bundle"
+    },
+    {
+      "case_id": "vf_missing_required_file_not_verified",
+      "expected_code": "REFUSE_REQUIRED_FILES_MISSING",
+      "kind": "missing_required",
+      "remove": "TRUST_ROOTS.json"
+    },
+    {
+      "case_id": "vf_undeclared_extra_file_not_verified",
+      "expected_code": "REFUSE_UNDECLARED_FILE",
+      "filename": "ILLEGAL_TOP_LEVEL.json",
+      "kind": "undeclared_extra"
+    }
+  ],
+  "family": "verification"
+}
